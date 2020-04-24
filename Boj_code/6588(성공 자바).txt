@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+public class b_6588_re2 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		
+		boolean sosu[]=new boolean[1000001];
+		int ar[]=new int[1000001];
+		// 홀수인 소수 걸러내기
+		for(int i=2;i<=1000000;i++) {
+			if(sosu[i]!=true) {
+				ar[i]=i;
+			}
+			for(int j=i+i;j<=1000000;j+=i) {
+				sosu[j]=true;
+			}
+		}
+		while(true) {
+			int num=Integer.parseInt(bf.readLine());
+			if(num==0)
+				break;
+			int a=0,b=0;
+			for(int i=3;i<=num;i++) {
+				if(ar[i]!=0) {
+					a=i;
+					if(ar[num-a]!=0) {
+						b=num-a;
+						break;
+					}
+				}
+			}
+			if(a!=0 && b!=0)
+				sb.append(a+b+" = "+a+" + "+b+"\n");
+			else
+				sb.append("Goldbach's conjecture is wrong."+"\n");
+		}
+		System.out.print(sb);
+	}
+}

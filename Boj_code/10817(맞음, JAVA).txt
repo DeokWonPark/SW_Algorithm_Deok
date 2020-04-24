@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args)
+    {
+        int q,w,e;
+        Scanner a=new Scanner(System.in);
+        q=a.nextInt();
+        w=a.nextInt();
+        e=a.nextInt();
+        
+        if(q>=w) {
+        	if(q>=e) {
+        		if(w>=e) {
+        			System.out.println(w);
+        		}
+        		else
+        			System.out.println(e);
+        	}
+        	else {
+        		System.out.println(q);
+        	}
+        }
+        else {
+        	if(w>=e) {
+        		if(q>=e) {
+        			System.out.println(q);
+        		}
+        		else {
+        			System.out.println(e);
+        		}
+        	}
+        	else {
+        		System.out.println(w);
+        	}
+        }
+    }
+  
+}

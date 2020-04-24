@@ -1,0 +1,18 @@
+import java.util.*;
+public class b_2751 {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		ArrayList<Integer>ts=new ArrayList<Integer>();
+		int count=a.nextInt();
+		for(int i=0;i<count;i++) {
+			ts.add(a.nextInt());
+		}
+		Collections.sort(ts);
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<ts.size();i++) {
+			sb.append(ts.get(i)+"\n");
+		}
+		System.out.println(sb);
+	}
+}

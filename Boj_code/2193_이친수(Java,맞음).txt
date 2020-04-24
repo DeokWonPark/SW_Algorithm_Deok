@@ -1,0 +1,16 @@
+import java.util.*;
+public class b_2193 {
+
+	public static void main(String [] args) {
+		Scanner a= new Scanner(System.in);
+		int input=a.nextInt();
+		
+		long al[]=new long[input+1];
+		al[0]=0;
+		al[1]=1;
+		for(int i=2;i<input+1;i++) {
+			al[i]=al[i-1]+al[i-2];
+		}
+		System.out.println(al[input]);
+	}
+}

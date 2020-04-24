@@ -1,0 +1,65 @@
+import java.util.*;
+public class b_1463re {
+
+	public static void main(String[] args) {
+		Scanner a= new Scanner(System.in);
+		int count_sum_3=0;
+		int count_sum_2=0;
+		int count_sum_1=0;
+		int final_value=0;
+		int num=a.nextInt();
+		if(num<=3) {
+			if(num==1) {
+				System.out.println(0);
+				return;
+			}
+			else {
+				System.out.println(1);
+				return;
+			}
+		}
+		int []arr=new int[num+1];
+		arr[1]=0;
+		arr[2]=1;
+		arr[3]=1;
+		for(int i=4;i<=num;i++) {
+			count_sum_1=1000000;
+			count_sum_2=1000000;
+			count_sum_3=1000000;
+			final_value=0;
+			
+			int temp=i;
+			if(i%3==0) {
+				temp/=3;
+				count_sum_3=arr[temp]+1;
+				temp=i;
+			}
+			if(i%2==0) {
+				temp/=2;
+				count_sum_2=arr[temp]+1;
+				temp=i;
+			}
+			temp-=1;
+			count_sum_1++;
+			count_sum_1=arr[temp]+1;
+			temp=i;
+			
+			if(count_sum_3 > count_sum_2) {
+				if(count_sum_1 > count_sum_2) {
+					final_value=count_sum_2;
+				}
+				else
+					final_value=count_sum_1;
+			}
+			else {
+				if(count_sum_1 > count_sum_3) {
+					final_value=count_sum_3;
+				}
+				else
+					final_value=count_sum_1;
+			}
+			arr[i]=final_value;
+		}
+		System.out.println(final_value);
+	}
+}

@@ -1,0 +1,85 @@
+#include<stdio.h>
+#define max_size   100000
+int steck[max_size];
+int marking[max_size] = { 0 };
+char pm[1000000];
+int topc = -1;
+int pmcount = -1;
+void push(int item, int *lpm)
+{
+	steck[++topc] = item;
+	*lpm = item;
+	pm[++pmcount] = '+';
+}
+void pop()
+{
+	if (topc == -1)
+		return;
+	marking[steck[topc]] = 1;
+	pm[++pmcount] = '-';
+	topc--;
+}
+
+int main(void)
+{
+	int count,num,cnum,bnum=0;
+	int i,j,n;
+	int lpm=0;
+	
+	scanf("%d", &count);
+
+	for (i = 0; i < count; i++)
+	{
+		scanf("%d", &num);
+
+		if (count < num)
+		{
+			printf("NO \n");
+			return 0;
+		}
+
+		if (num > bnum)
+		{
+			cnum = num - lpm;
+			for (j = 0; j < cnum; j++)
+			{
+				push(lpm + 1,&lpm);
+			}
+			pop();
+		}
+		else
+		{
+			if (bnum == num)
+			{
+				printf("NO \n");
+				return 0;
+			}
+			else if ((bnum - num)==1)
+			{
+				pop();
+			}
+			else if ((bnum - num) >= 2)
+			{
+				for (n = 0; n < (bnum - num); n++)
+				{
+					if ((marking[bnum - n]) == 0)
+					{
+						printf("NO \n");
+						return 0;
+					}
+				}
+				pop();
+			}
+			else
+			{
+				printf("NO \n");
+				return 0;
+			}
+		}
+		bnum = num;
+
+	}
+	for (i = 0; i < pmcount+1; i++)
+		printf("%c \n", pm[i]);
+	return 0;
+}

@@ -1,0 +1,73 @@
+import java.io.*;
+public class b_16929 {
+
+	static int N,M;
+	static char map[][];
+	static int start_x=-1,start_y=-1;
+	static int go[][]= {{-1,0},{1,0},{0,-1},{0,1}};
+	static boolean flag;
+	
+	static void DFS(int x,int y,boolean check[][],int count) {
+		if(flag==true)
+			return;
+		if(x==start_x && y==start_y) {
+			if(count>=4) {
+				flag=true;
+				return;
+			}
+		}
+		
+		if(count==1) {
+			start_x=x;
+			start_y=y;
+		}
+
+		for(int i=0;i<4;i++) {
+			if(x+go[i][0]>=0 && y+go[i][1]>=0 && x+go[i][0]<N &&  y+go[i][1]<M) {
+				if(check[x+go[i][0]][y+go[i][1]]==false && map[x][y]==map[x+go[i][0]][y+go[i][1]]) {
+					if(x+go[i][0]==start_x && y+go[i][1]==start_y) {
+						if(count>=4) {
+							check[x+go[i][0]][y+go[i][1]]=true;
+							DFS(x+go[i][0],y+go[i][1],check,count+1);
+						}
+					}
+					else {
+						check[x+go[i][0]][y+go[i][1]]=true;
+						DFS(x+go[i][0],y+go[i][1],check,count+1);
+					}
+				}
+			}
+		}
+	}
+	
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		String lines[]=bf.readLine().split(" ");
+		N=Integer.parseInt(lines[0]);
+		M=Integer.parseInt(lines[1]);
+		map=new char[N][M];
+		
+		
+		for(int i=0;i<N;i++) {
+			String line=bf.readLine();
+			for(int j=0;j<M;j++) {
+				map[i][j]=line.charAt(j);
+			}
+		}
+		
+		for(int i=0;i<N;i++) {
+			for(int j=0;j<M;j++) {
+				boolean check[][]=new boolean[N][M];
+				DFS(i,j,check,1);
+				if(flag) {
+					System.out.print("Yes");
+					break;
+				}
+			}
+			if(flag)
+				break;
+		}
+		if(!flag)
+			System.out.print("No");
+	}
+}

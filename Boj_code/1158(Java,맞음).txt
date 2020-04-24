@@ -1,0 +1,59 @@
+import java.util.*;
+public class b_1158 {
+
+	public static void main(String [] args) {
+		Scanner a= new Scanner(System.in);
+		int N=a.nextInt();
+		int K=a.nextInt();
+		
+		LinkedList<Integer> l1=new LinkedList<Integer>();
+		LinkedList<Integer> l2=new LinkedList<Integer>();
+		
+		for(int i=1;i<=N;i++) {
+			l1.offer(i);
+		}
+		StringBuilder sb= new StringBuilder();
+		sb.append("<");
+		int count=1;
+		int check=0;
+		while(!(l1.isEmpty()) || !(l2.isEmpty())) {
+			while(!(l1.isEmpty())) {
+				for(;count<K;count++) {
+					if(l1.isEmpty())
+						break;
+					l2.offer(l1.poll());
+				}
+				if(l1.isEmpty())
+					break;
+				if(count==K) {
+					sb.append(l1.poll());
+					check++;
+					if(check<N) 
+						sb.append(", ");
+					count=1;
+				}
+			}
+			
+			while(!(l2.isEmpty())) {
+				while(!(l2.isEmpty())) {
+					for(;count<K;count++) {
+						if(l2.isEmpty())
+							break;
+						l1.offer(l2.poll());
+					}
+					if(l2.isEmpty())
+						break;
+					if(count==K) {
+						sb.append(l2.poll());
+						check++;
+						if(check<N) 
+							sb.append(", ");
+						count=1;
+					}
+				}
+			}
+		}
+		sb.append(">");
+		System.out.print(sb);
+	}
+}

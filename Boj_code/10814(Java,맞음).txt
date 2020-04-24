@@ -1,0 +1,40 @@
+import java.util.*;
+import java.io.*;
+class Member implements Comparable<Member>{
+	int age;
+	String name;
+	Member(int age,String name){
+		this.age=age;
+		this.name=name;
+	}
+	public int compareTo(Member that) {
+		if(this.age<that.age) {
+			return -1;
+		}
+		else if(this.age==that.age) {
+			return 0;
+		}
+		else {
+			return 1;
+		}
+	}
+}
+public class b_10814 {
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		Stack<Member>sk=new Stack<Member>();
+		for(int i=0;i<count;i++) {
+			String[] line=bf.readLine().split(" ");
+			Member newone=new Member(Integer.parseInt(line[0]),line[1]);
+			sk.push(newone);
+		}
+		Collections.sort(sk);
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<count;i++) {
+			sb.append(sk.get(i).age + " "+sk.get(i).name+ "\n");
+		}
+		System.out.print(sb);
+	}
+}

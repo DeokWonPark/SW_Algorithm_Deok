@@ -1,0 +1,58 @@
+import java.util.*;
+import java.io.*;
+public class b_1406 {
+
+	public static void main(String [] args) throws IOException{
+		
+		BufferedReader a=new BufferedReader(new InputStreamReader(System.in));
+		
+		String line=a.readLine();
+		LinkedList<Character> ll=new LinkedList<Character>();
+		int index=0;
+		
+		
+		for(int i=0;i<line.length();i++) {
+			ll.add(index++,line.charAt(i));
+		}
+		
+		int front=index;
+		int count=Integer.parseInt(a.readLine());
+		
+		for(int i=0;i<count;i++) {
+			String tok[]=a.readLine().split(" ");
+			switch(tok[0]) {
+			case "L":
+				if(index!=0)
+					index--;
+				break;
+				
+			case "D":
+				if(index<front)
+					index++;
+				break;
+				
+			case "B":
+				if(index!=0) {
+					front--;
+					ll.remove(--index);
+				}
+				break;
+				
+			case "P":
+				String c=tok[1];
+				front++;
+				ll.add(index++,c.charAt(0));
+				break;
+				
+			default:
+				break;
+			}
+
+		}
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<front;i++) {
+			sb.append(ll.get(i));
+		}
+		System.out.print(sb);
+	}
+}

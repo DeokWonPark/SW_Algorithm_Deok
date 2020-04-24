@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+public class b_1699 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		int num=Integer.parseInt(bf.readLine());
+		int dp[]=new int[num+1];
+		for(int i=1;i<=num;i++) {
+			int min=1000000;
+			int result=0;
+			int temp=i;
+			if(i<4) {
+				dp[i]=i;
+				continue;
+			}
+			int index=((int)Math.sqrt(temp));
+			while(index>=1) {
+				result=temp-( index * index );
+				if(min>dp[result]+1)
+					min=dp[result]+1;
+				index--;
+			}
+			dp[i]=min;
+		}
+		System.out.print(dp[num]);
+	}
+}

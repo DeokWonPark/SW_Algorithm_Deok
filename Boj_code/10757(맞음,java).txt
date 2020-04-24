@@ -1,0 +1,11 @@
+import java.util.*;
+import java.math.*;
+public class b_10757 {
+
+	public static void main(String []args) {
+		Scanner a=new Scanner(System.in);
+		BigInteger A=new BigInteger(a.next());
+		BigInteger B=new BigInteger(a.next());
+		System.out.println(A.add(B));
+	}
+}

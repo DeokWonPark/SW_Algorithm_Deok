@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+public class b_11652 {
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		LinkedList<Long> queue=new LinkedList<Long>();
+		int count=Integer.parseInt(bf.readLine());
+		for(int i=0;i<count;i++) {
+			queue.push(Long.parseLong(bf.readLine()));
+		}
+		Collections.sort(queue);
+		queue.offer(queue.get(queue.size()-1)+1);
+		
+		long num=0;
+		int length=1;
+		int maxlength=1;
+		num=queue.poll();
+		long maxnum=num;
+		for(int i=1;i<=count;i++) {
+			long curnum=queue.poll();
+			if(num==curnum) {
+				length++;
+			}
+			else {
+				if(maxlength<length) {
+					maxlength=length;
+					maxnum=num;
+				}
+				length=1;
+			}
+			num=curnum;
+		}
+		System.out.print(maxnum);
+	}
+}

@@ -1,0 +1,51 @@
+import java.util.*;
+import java.io.*;
+public class b_1124 {
+	public static void main(String[] args) throws IOException{
+		int A,B;
+		int ficount=0;
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		String arr[]=bf.readLine().split(" ");
+		A=Integer.parseInt(arr[0]);
+		B=Integer.parseInt(arr[1]);
+		
+		boolean prime[]=new boolean[B+1];
+		for(int i=2;i<=B;i++) {
+			prime[i]=true;
+		}
+		
+		for(int i=2;i*i<=B;i++) {
+			if(prime[i]==false) 
+				continue;
+			for(int j=i;j<=B;j+=i) {
+				if(j==i) 
+					continue;
+				else 
+					prime[j]=false;
+			}
+		}
+		int temp=0;
+		int count=0;
+		for(int i=A;i<=B;i++) {
+			temp=i;
+			count=0;
+			for(int j=2;j<prime.length;j++) {
+				if(temp==1) 
+					break;
+				if(prime[j]==false)
+					continue;
+				if(temp%j==0) {
+					temp/=j;
+					count++;
+					j=1;
+				}
+			}
+			if(count>1) {
+				if(prime[count]==true) {
+					ficount++;
+				}
+			}
+		}
+		System.out.println(ficount);
+	}
+}

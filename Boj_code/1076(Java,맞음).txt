@@ -1,0 +1,29 @@
+import java.util.*;
+public class b1076 {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		HashMap<String,Integer> ban=new HashMap<String,Integer>();
+		ban.put("black", 0);
+		ban.put("brown", 1);
+		ban.put("red", 2);
+		ban.put("orange", 3);
+		ban.put("yellow", 4);
+		ban.put("green", 5);
+		ban.put("blue", 6);
+		ban.put("violet", 7);
+		ban.put("grey", 8);
+		ban.put("white", 9);
+		
+		long value;
+		long temp;
+		value=ban.get(a.next())*10;
+		value+=ban.get(a.next());
+		temp=ban.get(a.next());
+		
+		for(int i=0;i<temp;i++) {
+			value*=10;
+		}
+		System.out.println(value);
+	}
+}

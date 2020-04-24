@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class b_2609 {
+
+	public static void main(String argc[]) {
+		int num1,num2;
+		int gcd=0;int lcm=0;
+		int temp1,temp2;
+		
+		Scanner a= new Scanner(System.in);
+		num1=a.nextInt();
+		num2=a.nextInt();
+		
+		for(int i=1;i<=(num1<num2?num1:num2);i++) {
+			if(num1%i==0) {
+				if(num2%i==0) {
+					gcd=i;
+				}
+			}
+		}
+		System.out.println(gcd);
+		temp1=num1;
+		temp2=num2;
+		
+		int i=2;
+		int j=2;
+		
+		while(temp1!=temp2) {
+			if(temp1>temp2) {
+				temp2=num2*i++;
+			}
+			else if(temp1<temp2) {
+				temp1=num1*j++;
+			}
+		}
+		lcm=temp1;
+		System.out.println(lcm);
+		
+	}
+	
+}

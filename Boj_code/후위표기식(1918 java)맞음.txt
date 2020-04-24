@@ -1,0 +1,122 @@
+import java.io.*;
+import java.util.*;
+
+class dog{
+	int loop(int i,StringBuilder sb,String line) {
+		Stack<Character>sk1k=new Stack<Character>();
+		Stack<Character>sk2k=new Stack<Character>();
+		while(true) {
+			i++;
+			char tok=line.charAt(i);
+			if(tok=='(') {
+				i=loop(i,sb,line);
+				continue;
+			}
+			if(tok==')')
+				break;
+			
+			if(tok>=65 && tok<=90) { //피연산자
+				sk1k.push(tok);
+				continue;
+			}
+			else {
+				if(!sk1k.empty()) {
+					sb.append(sk1k.pop());
+				}
+				if(sk2k.empty()) {
+					sk2k.push(tok);
+					continue;
+				}
+				if(tok=='*' || tok=='/') {
+					if(sk2k.peek()=='+' || sk2k.peek()=='-') {
+						sk2k.push(tok);
+					}
+					else {
+						while(!sk2k.empty()) {
+							if(sk2k.peek()=='+' || sk2k.peek()=='-')
+								break;
+							sb.append(sk2k.pop());
+						}
+						sk2k.push(tok);
+					}
+				}
+				else if(tok=='+' || tok=='-') {
+					while(!sk2k.empty()) {
+						sb.append(sk2k.pop());
+					}
+					sk2k.push(tok);
+				}
+			}
+		}
+		while(!sk1k.empty()) {
+			sb.append(sk1k.pop());
+		}
+		while(!sk2k.empty()) {
+			sb.append(sk2k.pop());
+		}
+		return i;
+	}
+}
+public class b_1918 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		
+		Stack<Character>sk1=new Stack<Character>();
+		Stack<Character>sk2=new Stack<Character>();
+		
+		
+		String line=bf.readLine();
+		
+		for(int i=0;i<line.length();i++) {
+			char tok=line.charAt(i);
+			
+			if(tok=='(') {
+				dog a=new dog();
+				i=a.loop(i,sb,line);
+				continue;
+			}
+			
+			if(tok>=65 && tok<=90) { //피연산자
+				sk1.push(tok);
+				continue;
+			}
+			else {
+				if(!sk1.empty()) {
+					sb.append(sk1.pop());
+				}
+				if(sk2.empty()) {
+					sk2.push(tok);
+					continue;
+				}
+				if(tok=='*' || tok=='/') {
+					if(sk2.peek()=='+' || sk2.peek()=='-') {
+						sk2.push(tok);
+					}
+					else {
+						while(!sk2.empty()) {
+							if(sk2.peek()=='+' || sk2.peek()=='-')
+								break;
+							sb.append(sk2.pop());
+						}
+						sk2.push(tok);
+					}
+				}
+				else if(tok=='+' || tok=='-') {
+					while(!sk2.empty()) {
+						sb.append(sk2.pop());
+					}
+					sk2.push(tok);
+				}
+			}
+		}
+		while(!sk1.empty()) {
+			sb.append(sk1.pop());
+		}
+		while(!sk2.empty()) {
+			sb.append(sk2.pop());
+		}
+		System.out.print(sb);
+	}
+}

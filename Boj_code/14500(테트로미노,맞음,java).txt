@@ -1,0 +1,157 @@
+import java.util.*;
+import java.io.*;
+public class b_14500 {
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		String [] input_line=bf.readLine().split(" ");
+		int row=Integer.parseInt(input_line[0]);
+		int colum=Integer.parseInt(input_line[1]);
+		//메트릭스 초기화 단계
+		int bord[][]=new int [row][colum];
+		for(int i=0;i<row;i++) {
+			String [] line=bf.readLine().split(" ");
+			for(int j=0;j<colum;j++) {
+				bord[i][j]=Integer.parseInt(line[j]);
+			}
+		}
+		//2개 더하는거
+		int row2_mat[][]=new int[row][colum-1];
+		int colum2_mat[][]=new int[row-1][colum];
+		int max=0;
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<colum-1;j++) {
+				row2_mat[i][j]=bord[i][j]+bord[i][j+1];
+			}
+		}
+		
+		for(int i=0;i<colum;i++) {
+			for(int j=0;j<row-1;j++) {
+				colum2_mat[j][i]=bord[j][i]+bord[j+1][i];
+			}
+		}
+		
+		
+		for(int i=0;i<row-1;i++) {
+			for(int j=0;j<colum-1;j++) {
+				if(max<(row2_mat[i][j]+row2_mat[i+1][j])) {
+					max=row2_mat[i][j]+row2_mat[i+1][j];
+				}
+				if(j<colum-2) {
+					if(max<(row2_mat[i][j]+row2_mat[i+1][j+1])) {
+						max=row2_mat[i][j]+row2_mat[i+1][j+1];
+					}
+				}
+				if(i<row-2) {
+					if(max<(colum2_mat[i][j]+colum2_mat[i+1][j+1])) {
+						max=colum2_mat[i][j]+colum2_mat[i+1][j+1];
+					}
+				}
+			}
+		}
+		
+		for(int i=0;i<row-1;i++) {
+			for(int j=colum-2;j>0;j--) {
+				if(max<(row2_mat[i][j]+row2_mat[i+1][j-1])) {
+					max=row2_mat[i][j]+row2_mat[i+1][j-1];
+				}
+				
+				if(i<row-2) {
+					if(max<(colum2_mat[i][j]+colum2_mat[i+1][j-1])) {
+						max=colum2_mat[i][j]+colum2_mat[i+1][j-1];
+					}
+				}
+			}
+		}
+		
+		//3개 더하는거 부터 
+		int row3_mat[][]=new int[row][colum-2];
+		int colum3_mat[][]=new int[row-2][colum];
+		
+		for(int i=0;i<row;i++) {
+			for(int j=0;j+2<colum;j++) {
+				row3_mat[i][j]=bord[i][j]+bord[i][j+1]+bord[i][j+2];
+			}
+		}
+		
+		for(int i=0;i<colum;i++) {
+			for(int j=0;j<row-2;j++) {
+				colum3_mat[j][i]=bord[j][i]+bord[j+1][i]+bord[j+2][i];
+			}
+		}
+		
+		for(int i=0;i<row-1;i++) {
+			for(int j=0;j<colum-2;j++) {
+				for(int n=0;n<3;n++) {
+					if(max < row3_mat[i][j]+bord[i+1][j+n]) {
+						max=row3_mat[i][j]+bord[i+1][j+n];
+					}
+				}
+			}
+		}
+		//역
+		for(int i=row-1;i>0;i--) {
+			for(int j=0;j<colum-2;j++) {
+				for(int n=0;n<3;n++) {
+					if(max < row3_mat[i][j]+bord[i-1][j+n]) {
+						max=row3_mat[i][j]+bord[i-1][j+n];
+					}
+				}
+			}
+		}
+		
+		for(int i=0;i<colum-1;i++) {
+			for(int j=0;j<row-2;j++) {
+				for(int n=0;n<3;n++) {
+					if(max < colum3_mat[j][i]+bord[j+n][i+1]) {
+						max=colum3_mat[j][i]+bord[j+n][i+1];
+					}
+				}
+			}
+		}
+		//역
+		for(int i=colum-1;i>0;i--) {
+			for(int j=0;j<row-2;j++) {
+				for(int n=0;n<3;n++) {
+					if(max < colum3_mat[j][i]+bord[j+n][i-1]) {
+						max=colum3_mat[j][i]+bord[j+n][i-1];
+					}
+				}
+			}
+		}
+		
+		//4개 더하는거
+		
+		int row4_mat[][]=new int[row][colum-3];
+		int colum4_mat[][]=new int[row-3][colum];
+		
+		for(int i=0;i<row;i++) {
+			for(int j=0;j+3<colum;j++) {
+				row4_mat[i][j]=bord[i][j]+bord[i][j+1]+bord[i][j+2]+bord[i][j+3];
+			}
+		}
+		
+		for(int i=0;i<colum;i++) {
+			for(int j=0;j<row-3;j++) {
+				colum4_mat[j][i]=bord[j][i]+bord[j+1][i]+bord[j+2][i]+bord[j+3][i];
+			}
+		}
+		
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<colum-3;j++) {
+				if(max < row4_mat[i][j]) {
+					max=row4_mat[i][j];
+				}
+			}
+		}
+		
+		for(int i=0;i<colum;i++) {
+			for(int j=0;j<row-3;j++) {
+				if(max < colum4_mat[j][i]) {
+					max=colum4_mat[j][i];
+				}
+			}
+		}
+		
+		System.out.println(max);
+	}
+}

@@ -1,0 +1,4 @@
+str=input()
+list=str.split()
+list1=[eval(i) for i in list]
+print(list1[0]/list1[1])

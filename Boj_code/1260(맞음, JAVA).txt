@@ -1,0 +1,112 @@
+import java.util.Scanner;
+class queue1{
+	protected int front;
+	protected int rear;
+	protected int maxsize;
+	protected int que[];
+	queue1(){
+		this.front=0;
+		this.rear=0;
+		this.maxsize=100001 ;
+		que=new int[100001];
+	}
+	public void push(int item) {
+		if(((rear+1)%maxsize) == front)
+			return;
+		rear=(rear+1)%maxsize;
+		que[rear]=item;
+	}
+	public int pop() {
+		if(front==rear)
+			System.out.println(-1);
+		else {
+			front=(front+1)%maxsize;
+			System.out.println(que[front]);
+		}
+		return 0;
+	}
+	
+}
+class DFSBFS extends queue1{
+	private int vertex;
+	private int edge;
+	private int start;
+	private boolean adj[][];
+	private boolean check[];
+	
+	DFSBFS(int v,int e,int s){
+		this.vertex=v;
+		this.edge=e;
+		this.start=s;
+		adj=new boolean[v+1][v+1];
+		check=new boolean[v+1];
+	}
+	public void Insert(int v1,int v2) {
+		adj[v1][v2]=true;
+       		adj[v2][v1]=true;
+	}
+	public int EDGE() {
+		return edge;
+	}
+	public int  START() {
+		return start;
+	}
+	public void init() {
+		for(int i=0;i<check.length;i++) {
+			check[i]=false;
+		}
+	}
+	public int pop() {
+		if(front==rear)
+			return -1;
+		else {
+			front=(front+1)%maxsize;
+			return que[front];
+		}
+	}
+	public void DFS(int s) {
+		check[s]=true;
+		System.out.printf("%d ",s);
+		for(int i=1;i<vertex+1;i++) {
+			if(!check[i] && adj[s][i]) {
+				DFS(i);
+			}
+		}
+	}
+	public void BFS(int s) {
+		check[s]=true;
+		System.out.printf("%d ",s);
+		push(s);
+		while(!(rear==front)) {
+			s=pop();
+			for(int i=1;i<vertex+1;i++) {
+				if(!check[i] && adj[s][i]) {
+					System.out.printf("%d ",i);
+					check[i]=true;
+					push(i);
+				}
+			}
+		}
+	}
+}
+public class Main {
+	public static void main(String [] args) {
+		
+		Scanner a=new Scanner(System.in);
+		DFSBFS g=new DFSBFS(a.nextInt(),a.nextInt(),a.nextInt());
+		
+		for(int i=0;i<g.EDGE();i++) {
+			g.Insert(a.nextInt(),a.nextInt());
+		}
+		g.init();
+		g.DFS(g.START());
+		System.out.println();
+		g.init();
+		g.BFS(g.START());
+		
+		a.close();
+		return;
+		 
+	}
+
+}

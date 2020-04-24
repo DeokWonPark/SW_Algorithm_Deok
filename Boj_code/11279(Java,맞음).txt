@@ -1,0 +1,27 @@
+import java.util.*;
+public class b_11279 {
+
+	public static void main(String [] args) {
+		Scanner a=new Scanner(System.in);
+		PriorityQueue<Integer> pq=new PriorityQueue<Integer>(Collections.reverseOrder());
+		
+		int count=a.nextInt();
+		int cmd;
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<count;i++) {
+			cmd=a.nextInt();
+			if(cmd==0) {
+				if(pq.isEmpty()) {
+					sb.append(0+"\n");
+				}
+				else {
+					sb.append(pq.poll()+"\n");
+				}
+			}
+			else {
+				pq.offer(cmd);
+			}
+		}
+		System.out.println(sb);
+	}
+}

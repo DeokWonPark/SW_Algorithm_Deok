@@ -1,0 +1,39 @@
+import java.util.*;
+import java.io.*;
+public class b_11655 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		String line=bf.readLine();
+		char arr[] = line.toCharArray();
+		
+		for(int i=0;i<arr.length;i++) {
+			int tok=arr[i];
+			if(tok>='A' && tok<='Z') {
+				if(tok<='M') {
+					arr[i]+=13;
+					sb.append(arr[i]);
+				}
+				else {
+					arr[i]-=13;
+					sb.append(arr[i]);
+				}
+			}
+			else if(tok>='a' && tok<='z') {
+				if(tok<='m') {
+					arr[i]+=13;
+					sb.append(arr[i]);
+				}
+				else {
+					arr[i]-=13;
+					sb.append(arr[i]);
+				}
+			}
+			else {
+				sb.append(arr[i]);
+			}
+		}
+		System.out.print(sb);
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.*;
+public class b_10818 {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner (System.in);
+		a.nextLine();
+		String arr=a.nextLine();
+		StringTokenizer st=new StringTokenizer(arr);
+		int temp[] =new int[st.countTokens()];
+		int i=0;
+		while(st.hasMoreTokens()) {
+			temp[i++]=Integer.parseInt(st.nextToken());
+		}
+		Arrays.sort(temp);
+		System.out.println(temp[0]+" "+temp[temp.length-1]);
+	}
+}

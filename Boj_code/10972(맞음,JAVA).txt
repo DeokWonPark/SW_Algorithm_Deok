@@ -1,0 +1,59 @@
+import java.util.Scanner;
+import java.util.Vector;
+public class b_10972 {
+
+	public static void main(String[] args) {
+		
+		int count;
+		int k=-1,l=0;
+		int tempk=0,templ=0;
+		
+		
+		Vector<Integer> num=new Vector<Integer>();
+		Vector<Integer> numrev=new Vector<Integer>();
+		Scanner a=new Scanner(System.in);
+		
+		count=a.nextInt();
+		
+		for(int i=0;i<count;i++) {
+			num.add(a.nextInt());
+		}
+		
+		for(int i=0;i<count-1;i++) { 
+			if(num.get(i)>=num.get(i+1))
+				continue;
+			k=i;
+		}
+		if(k==-1) {
+			System.out.println(-1);
+			return;
+		}
+		
+		for(l=k+1;l<count;l++) {
+			if(num.get(k)>=num.get(l))
+				break;
+		}
+		l--;
+		
+		tempk=num.get(k);
+		templ=num.get(l);
+		num.remove(k);
+		num.add(k, templ);
+		num.remove(l);
+		num.add(l,tempk);
+		
+		for(int i=count-1;i>k;i--) {
+			numrev.add(num.get(i));
+		}
+		
+		int j=0;
+		for(int i=k+1;i<count;i++) {
+			num.remove(i);
+			num.add(i,numrev.get(j++));
+		}
+		
+		for(int i=0;i<count;i++) {
+			System.out.print(num.get(i)+ " ");
+		}
+	}
+}

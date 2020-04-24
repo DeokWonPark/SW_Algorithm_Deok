@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int month[12][31];
+	int mon,day;
+	int tem;
+	int i = 0;
+
+	for (mon = 0; mon < 12; mon++)
+	{
+		switch (mon+1)
+		{
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			tem = 31;
+			break;
+		case 2:
+			tem = 28;
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			tem = 30;
+			break;
+		default:
+			break;
+		}
+
+		for (day = 0; day < tem; day++)
+		{
+			month[mon][day] = i;
+			i += 1;
+			i %= 7;
+		}
+	}
+
+	int m, d;
+	cin >> m >> d;
+
+	switch (month[m-1][d-1])
+	{
+	case 0:
+		cout << "MON" << endl;
+		break;
+	case 1:
+		cout << "TUE" << endl;
+		break;
+	case 2:
+		cout << "WED" << endl;
+		break;
+	case 3:
+		cout << "THU" << endl;
+		break;
+	case 4:
+		cout << "FRI" << endl;
+		break;
+	case 5:
+		cout << "SAT" << endl;
+		break;
+	case 6:
+		cout << "SUN" << endl;
+		break;
+	default:
+		break;
+	}
+	return 0;
+
+}

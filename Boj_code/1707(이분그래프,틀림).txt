@@ -1,0 +1,73 @@
+import java.io.*;
+import java.util.*;
+class graphs{
+	int vertex;
+	int edge;
+	boolean check[];
+	ArrayList<Integer> ar[];
+	graphs(int v,int e){
+		this.vertex=v;
+		this.edge=e;
+		check=new boolean[v+1];
+		ar=(ArrayList<Integer>[])new ArrayList[v+1];
+		for(int i=1;i<=v;i++) {
+			ar[i]=new ArrayList();
+		}
+	}
+	void init(int n1,int n2) {
+		ar[n1].add(n2);
+		ar[n2].add(n1);
+	}
+	void dfs(int x) {
+		check[x]=true;
+		for(int i=0;i<ar[x].size();i++) {
+			int y=ar[x].get(i);
+			if(check[y]==false) {
+				dfs(y);
+			}
+		}
+	}
+	void clean(){
+		for(int i=0;i<check.length;i++) {
+			check[i]=false;
+		}
+	}
+}
+public class b_1707 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		int count=Integer.parseInt(bf.readLine());
+		for(int i=0;i<count;i++) {
+			boolean yon=false;
+			String lines[]=bf.readLine().split(" ");
+			int ver=Integer.parseInt(lines[0]);
+			int edge=Integer.parseInt(lines[1]);
+			graphs gp=new graphs(ver,edge);
+			for(int j=0;j<edge;j++) {
+				String line[]=bf.readLine().split(" ");
+				int n1=Integer.parseInt(line[0]);
+				int n2=Integer.parseInt(line[1]);
+				if(yon==true)
+					continue;
+				gp.dfs(n1);
+				if(gp.check[n2]==true) {
+					yon=true;
+					sb.append("NO\n");
+					continue;
+				}
+				gp.clean();
+				gp.init(n1, n2);
+			}
+			if(yon==true) {
+				continue;
+			}
+			
+			else {
+				sb.append("YES\n");
+			}
+		}
+		System.out.print(sb);
+	}
+}

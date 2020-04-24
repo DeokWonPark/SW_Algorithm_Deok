@@ -1,0 +1,19 @@
+import java.util.*;
+import java.math.*;
+public class b_10826 {
+	public static void main(String[] args) {
+		Scanner a= new Scanner(System.in);
+		int count=a.nextInt();
+		if(count==0) {
+			System.out.println(0);
+			return;
+		}
+		BigInteger[] fbarr=new BigInteger[count+1];
+		fbarr[0]=new BigInteger("0");
+		fbarr[1]=new BigInteger("1");
+		for(int i=2;i<count+1;i++) {
+			fbarr[i]=fbarr[i-1].add(fbarr[i-2]);
+		}
+		System.out.println(fbarr[count]);
+	}
+}

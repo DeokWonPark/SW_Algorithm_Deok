@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(void)
+{
+	char str[101];
+	int count, sum=0;
+	int index, plus;
+
+	scanf("%d", &count);
+	scanf("%s", str);
+
+	index = 0;
+	while (str[index] != NULL)
+	{
+		plus = str[index];
+		plus -= 48;
+		sum += plus;
+		index++;
+	}
+	printf("%d \n", sum);
+	return 0;
+}

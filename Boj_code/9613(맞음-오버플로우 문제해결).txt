@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.util.Vector;
+public class b_9613 {
+
+	public static void main(String argc[]) {
+		
+		int all_count;
+		int count;
+		int gcd=1;
+		long sum=0;
+		
+		Scanner a= new Scanner(System.in);
+		all_count=a.nextInt();
+		Vector<Integer> num=new Vector<Integer>();
+		
+		for(int i=0;i<all_count;i++) {
+			count=a.nextInt();
+			 for(int j=0;j<count;j++) {
+				 num.add(a.nextInt());
+			 }
+			 for(int n=0;n<count;n++) {
+				 
+				 for(int m=n+1;m<count;m++) {
+					 for(int v=(num.get(n)>num.get(m)?num.get(m):num.get(n));v>=1;v--) {
+						 
+						 if(num.get(n)%v==0) {
+							 if(num.get(m)%v==0) {
+								 gcd=v;
+								 break;
+							 }
+						 }
+					 }
+					 sum+=gcd;
+					 gcd=1;
+				 }
+			 }
+			 System.out.println(sum);
+			 sum=0;
+			 num.clear();
+		}
+	}
+}

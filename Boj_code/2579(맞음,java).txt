@@ -1,0 +1,26 @@
+import java.util.*;
+import java.io.*;
+public class b_2579 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		int tok[]=new int[count];
+		int dp[][]=new int[count][2];
+		for(int i=0;i<count;i++) {
+			tok[i]=Integer.parseInt(bf.readLine());
+		}
+		dp[0][0]=tok[0];
+		dp[0][1]=0;
+		for(int i=1;i<count;i++) {
+			if(i==1) {
+				dp[1][0]=tok[1];
+				dp[1][1]=tok[1]+dp[0][0];
+				continue;
+			}
+			dp[i][0]=Math.max(dp[i-2][0], dp[i-2][1])+tok[i];
+			dp[i][1]=dp[i-1][0]+tok[i];
+		}
+		System.out.print(Math.max(dp[count-1][0], dp[count-1][1]));
+	}
+}

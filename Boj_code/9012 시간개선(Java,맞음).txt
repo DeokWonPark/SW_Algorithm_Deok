@@ -1,0 +1,42 @@
+import java.util.*;
+import java.io.*;
+public class b_9012_2 {
+
+	public static void main(String[] args) throws IOException{
+		
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		StringBuilder sb= new StringBuilder();
+		
+		for(int i=0;i<count;i++) {
+			int stkpoint=0;
+			String line=bf.readLine();
+			boolean flag=true;
+			for(int j=0;j<line.length();j++) {
+				
+				if(line.charAt(j)=='(') {
+					stkpoint++;
+				}
+				else {
+					if(stkpoint<=0) {
+						sb.append("NO\n");
+						flag=false;
+						break;
+					}
+					else {
+						stkpoint--;
+					}
+				}
+			}
+			if(flag==true) {
+				if(stkpoint==0) {
+					sb.append("YES\n");
+				}
+				else {
+					sb.append("NO\n");
+				}
+			}
+		}
+		System.out.print(sb);
+	}
+}

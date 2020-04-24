@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		
+		boolean check[]=new boolean[1000001];
+		check[1]=true;
+		
+		for(int i=2;i*i<=1000000;i++) {
+			for(int j=i+i;j<=1000000;j+=i) {
+				check[j]=true;
+			}
+		}
+		
+		while(true) {
+			int n=Integer.parseInt(bf.readLine());
+			if(n==0) {
+				break;
+			}
+			boolean flag=false;
+			int s;
+			for(s=2;s<=n;s++) {
+				flag=false;
+				if(check[s]==false) {
+					if(check[n-s]==false) {
+						flag=true;
+						break;
+					}
+				}
+			}
+			if(flag==true) {
+				sb.append(n+" = "+s+" + "+(n-s)+"\n");
+			}
+			else {
+				sb.append("Goldbach's conjecture is wrong.");
+			}
+		}
+		System.out.print(sb);
+	}
+}

@@ -1,0 +1,48 @@
+import java.util.*;
+public class b_6588_re {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		StringBuilder sb=new StringBuilder();
+		while(true) {
+			int num=a.nextInt();
+			if(num==0)
+				break;
+			ArrayList<Integer> ar=new ArrayList<Integer>();
+			ar.add(2);
+			ar.add(3);
+			for(int i=5;i<num;i++) {
+				if(i%2==0) {
+					continue;
+				}
+				if(i%3==0) {
+					continue;
+				}
+				ar.add(i);
+			}
+			for(int i=5;i*i<num;i++) {
+				if(ar.contains(i)) {
+					for(Integer j=i+i;j<ar.size();j+=i) {
+						ar.remove(j);
+					}
+				}
+			}
+			int ck=0;
+			for(int i=0;i<ar.size();i++) {
+				for(int j=ar.size()-1;j>0;j--) {
+					if(num==(ar.get(i)+ar.get(j))) {
+						sb.append(num+" = "+ar.get(i)+" + "+ar.get(j)+"\n");
+						ck=1;
+						break;
+					}
+				}
+				if(ck==1)
+					break;
+			}
+			if(ck==0) {
+				sb.append("Goldbach's conjecture is wrong.\n");
+			}
+		}
+		System.out.println(sb);
+	}
+}

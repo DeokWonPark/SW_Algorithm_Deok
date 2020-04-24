@@ -1,0 +1,99 @@
+import java.util.*;
+public class b_1009 {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		
+		int count=a.nextInt();
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<count;i++) {
+			int md;
+			int r;
+			switch(a.nextInt()%10) {
+			case 1:
+				md=a.nextInt();
+				sb.append(1+"\n");
+				break;
+			case 2:
+				md=a.nextInt();
+				r=md%4;
+				if(r==1)
+					sb.append(2+"\n");
+				else if(r==2)
+					sb.append(4+"\n");
+				else if(r==3)
+					sb.append(8+"\n");
+				else
+					sb.append(6+"\n");
+				break;
+			case 3:
+				md=a.nextInt();
+				r=md%4;
+				if(r==1)
+					sb.append(3+"\n");
+				else if(r==2)
+					sb.append(9+"\n");
+				else if(r==3)
+					sb.append(7+"\n");
+				else
+					sb.append(1+"\n");
+				break;
+			case 4:
+				md=a.nextInt();
+				r=md%2;
+				if(r==1)
+					sb.append(4+"\n");
+				else
+					sb.append(6+"\n");
+				break;
+			case 5:
+				md=a.nextInt();
+				sb.append(5+"\n");
+				break;
+			case 6:
+				md=a.nextInt();
+				sb.append(6+"\n");
+				break;
+			case 7:
+				md=a.nextInt();
+				r=md%4;
+				if(r==1)
+					sb.append(7+"\n");
+				else if(r==2)
+					sb.append(9+"\n");
+				else if(r==3)
+					sb.append(3+"\n");
+				else
+					sb.append(1+"\n");
+				break;
+			case 8:
+				md=a.nextInt();
+				r=md%4;
+				if(r==1)
+					sb.append(8+"\n");
+				else if(r==2)
+					sb.append(4+"\n");
+				else if(r==3)
+					sb.append(2+"\n");
+				else
+					sb.append(6+"\n");
+				break;
+			case 9:
+				md=a.nextInt();
+				r=md%2;
+				if(r==1)
+					sb.append(9+"\n");
+				else
+					sb.append(1+"\n");
+				break;
+			case 0:
+				md=a.nextInt();
+				sb.append(10+"\n");
+				break;
+			default:
+				break;
+			}
+		}
+		System.out.println(sb);
+	}
+}

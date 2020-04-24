@@ -1,0 +1,26 @@
+import java.util.*;
+public class b_7785 {
+
+	public static void main(String [] args) {
+		Scanner a=new Scanner(System.in);
+		TreeSet<String> ts=new TreeSet<String>();
+		
+		int count=a.nextInt();
+		a.nextLine();
+		for(int i=0;i<count;i++) {
+			String man[]=a.nextLine().split(" ");
+			if(man[1].equals("enter")) {
+				ts.add(man[0]);
+			}
+			else if(man[1].equals("leave")) {
+				ts.remove(man[0]);
+			}
+		}
+		NavigableSet<String> re_ts=ts.descendingSet();
+		String []ts_arr=(String[])re_ts.toArray(new String[re_ts.size()]);
+		
+		for(int i=0;i<re_ts.size();i++) {
+			System.out.println(ts_arr[i]);
+		}
+	}
+}

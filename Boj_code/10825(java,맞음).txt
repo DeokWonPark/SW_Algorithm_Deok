@@ -1,0 +1,68 @@
+import java.util.*;
+import java.io.*;
+class Class implements Comparable<Class>{
+	String name;
+	int korea;
+	int english;
+	int math;
+	Class(String name, int korea, int english, int math){
+		this.name=name;
+		this.korea=korea;
+		this.english=english;
+		this.math=math;
+	}
+	public int compareTo(Class that) {
+		if(this.korea>that.korea) {
+			return -1;
+		}
+		else if(this.korea==that.korea) {
+			if(this.english<that.english) {
+				return -1;
+			}
+			else if(this.english==that.english) {
+				if(this.math>that.math) {
+					return -1;
+				}
+				else if(this.math==that.math) {
+					if((this.name.compareTo(that.name))<0) {
+						return -1;
+					}
+					else if((this.name.compareTo(that.name))==0) {
+						return 0;
+					}
+					else {
+						return 1;
+					}
+				}
+				else {
+					return 1;
+				}
+			}
+			else {
+				return 1;
+			}
+		}
+		else {
+			return 1;
+		}
+	}
+}
+public class b_10825 {
+
+	public static void main(String [] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		LinkedList<Class>sk=new LinkedList<Class>();
+		for(int i=0;i<count;i++) {
+			String[] line=bf.readLine().split(" ");
+			Class mem=new Class(line[0],Integer.parseInt(line[1]),Integer.parseInt(line[2]),Integer.parseInt(line[3]));
+			sk.push(mem);
+		}
+		Collections.sort(sk);
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<count;i++) {
+			sb.append(sk.poll().name+"\n");
+		}
+		System.out.print(sb);
+	}
+}

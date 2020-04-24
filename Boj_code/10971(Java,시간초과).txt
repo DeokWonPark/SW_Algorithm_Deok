@@ -1,0 +1,102 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+public class b_10971 { 
+	public static void main(String[] args) {
+		int x;
+		int check=0;
+		int check2=0;
+		int check3=0;
+		int distance=0;
+		
+		Scanner a=new Scanner(System.in);
+		x=a.nextInt();
+		
+		int arr[][];
+		arr=new int[x][x];
+		int order[];
+		order=new int[x];
+		Integer reorder[];
+		reorder=new Integer[x];
+		
+		for(int i=0;i<order.length;i++) {
+			order[i]=i;
+			reorder[i]=i;
+		}
+		Arrays.sort(reorder, Collections.reverseOrder());
+		
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				arr[i][j]=a.nextInt();
+			}
+		}
+		
+		while(check==0) {
+			check2=0;
+			for(int i=0;i<order.length;i++) {  // 사전식 비교 
+				if(order[i]!=reorder[i]) {
+					check2=-1;
+				}
+				if((order[i]==reorder[i]) && (i==order.length-1) ) {
+					if(check2==0) {
+						check=-1;
+						break;
+					}
+				}	
+			}
+			int temp=0;
+			//거리 감지
+			
+			for(int i=0;i<order.length;i++) {
+				if(i+1==order.length) {
+					temp+=arr[order[i]][order[0]];
+					break;
+				}
+				temp+=arr[order[i]][order[i+1]];
+				
+				if(arr[order[i]][order[i+1]]==0) {
+					check3=-1;
+					break;
+				}
+			}
+			if(check3==-1)
+				continue;
+		
+			if(distance==0 || distance > temp) {
+				distance=temp;
+			}
+			
+			// 사전식 순열 시작
+			int k=0,l=0;
+			
+			for(int i=0;i<order.length-1;i++) {
+				if(order[i]<order[i+1]) {
+					k=i;
+				}
+			}
+			
+			for(l=k+1;l<order.length;l++) {
+				if(order[k]>=order[l])
+					break;
+			}
+			l--;
+			
+			int bot=0;
+			bot=order[k];
+			order[k]=order[l];
+			order[l]=bot;
+			
+			Integer rev[]=new Integer[order.length-k-1];
+			for(int i=0;i<rev.length;i++) {
+				rev[i]=order[order.length-1-i];
+			}
+			for(int i=0;i<rev.length;i++) {
+				order[k+1+i]=rev[i];
+			}
+			
+		}
+		System.out.println(distance);
+		
+	}
+
+}

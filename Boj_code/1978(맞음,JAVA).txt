@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.Vector;
+public class b_1978 {
+
+	public static void main(String argc[]) {
+		int count,check=0;
+		int tnum,sum=0;
+		
+		Scanner a=new Scanner(System.in);
+		Vector<Integer> num= new Vector<Integer>();
+		count=a.nextInt();
+		
+		for(int i=0;i<count;i++) {
+			num.add(a.nextInt());
+		}
+		for(int i=0;i<count;i++) {
+			check=0;
+			tnum=num.get(i);
+			if(tnum==1 || tnum==0)
+				continue;
+			if(tnum==2) {
+				sum++;
+				continue;
+			}
+			for(int j=2;j<tnum;j++) {
+				if(tnum%j==0) {
+					check=1;
+					break;
+				}
+			}
+			if(check==0)
+				sum++;
+		}
+		System.out.println(sum);
+	}
+}

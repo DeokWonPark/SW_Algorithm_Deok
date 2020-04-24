@@ -1,0 +1,76 @@
+import java.util.Scanner;
+import java.util.Vector;
+public class b_6588 {
+
+	public static void main(String argc[]) {
+		
+		int key;
+		int check=1;
+		int test=0;
+		int num1=0,num2=0;
+		
+		Scanner a=new Scanner(System.in);
+		Vector<Integer> num=new Vector<Integer>();
+		Vector<Integer> tnum=new Vector<Integer>();
+		
+		while(check !=0) {
+			check=a.nextInt();
+			
+			if(check==0)
+				break;
+			
+			num.add(0);num.add(0);
+			for(int i=2;i<=check;i++) {
+				num.add(i);
+			}
+			
+			for(int i=2;i<Math.sqrt(check);i++) {
+				if(num.get(i)==0)
+					continue;
+				
+				for(int j=i+i;j<check;j+=i) {
+					if(num.get(j)==0)
+						continue;
+					
+					num.remove(j);
+					num.add(j, 0);
+				}
+			}
+			for(int i=2;i<=check;i++) {
+				if(num.get(i)!=0) {
+					tnum.add(i);
+				}
+			}
+			
+			test=0;
+			num1=0;
+			num2=0;
+			key=0;
+			
+			for(int i=0;i<tnum.size()/2;i++) {
+				for(int j=tnum.size()-1;j>=tnum.size()/2;j--) {
+					if(tnum.get(i)+tnum.get(j)==check) {
+						if((j-i) >= test) {
+							num1=tnum.get(i);
+							num2=tnum.get(j);
+							test=(j-i);
+							key=1;
+							break;
+						}
+						break;
+					}
+				}
+				if(key==1)
+					break;
+			}
+			if(num1==0 && num2==0) {
+				System.out.println("Goldbach's conjecture is wrong.");
+				continue;
+			}
+			
+			System.out.println(check+" = " + num1 + " + " + num2);
+			num.clear();
+			tnum.clear();
+		}
+	}
+}

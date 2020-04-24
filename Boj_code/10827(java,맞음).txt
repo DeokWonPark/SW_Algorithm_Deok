@@ -1,0 +1,11 @@
+import java.util.*;
+import java.math.*;
+public class b_10827 {
+
+	public static void main(String []args) {
+		Scanner a=new Scanner(System.in);
+		BigDecimal A=new BigDecimal(a.next());
+		int B=a.nextInt();
+		System.out.println(A.pow(B).toPlainString());
+	}
+}

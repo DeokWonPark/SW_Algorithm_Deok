@@ -1,0 +1,19 @@
+import java.util.*;
+import java.io.*;
+public class b_11653 {
+
+	public static void main(String []args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		int num=Integer.parseInt(bf.readLine());
+		for(int i=2;i*i<=num;i++) {
+			while(num%i==0) {
+				sb.append(i+"\n");
+				num/=i;
+			}
+		}
+		if(num>1)
+			sb.append(num);
+		System.out.print(sb);
+	}
+}

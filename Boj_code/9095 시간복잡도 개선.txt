@@ -1,0 +1,30 @@
+import java.util.*;
+import java.io.*;
+public class b_9095_2 {
+
+	public static void main(String [] args) throws IOException{
+		BufferedReader a= new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		
+		int dp[]=new int[11];
+		dp[1]=1;
+		dp[2]=2;
+		dp[3]=4;
+		int anum=0;
+		int count=Integer.parseInt(a.readLine());
+		for(int w=0;w<count;w++) {
+			int num=Integer.parseInt(a.readLine());
+			for(int i=4;i<=num;i++) {
+				if(anum>num)
+					break;
+				if(dp[i]!=0) {
+					continue;
+				}
+				dp[i]= dp[i-1]+ dp[i-2]+ dp[i-3];
+			}
+			sb.append(dp[num]+"\n");
+			anum=num;
+		}
+		System.out.print(sb);
+	}
+}

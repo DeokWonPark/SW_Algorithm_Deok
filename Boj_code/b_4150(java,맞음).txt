@@ -1,0 +1,19 @@
+import java.util.*;
+import java.io.*;
+import java.math.*;
+public class b_4150 {
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		BigInteger dp[]=new BigInteger[count+1];
+		dp[0]=new BigInteger("0");
+		for(int i=1;i<=count;i++) {
+			if(i<=2) {
+				dp[i]=new BigInteger("1");
+				continue;
+			}
+			dp[i]=dp[i-1].add(dp[i-2]);
+		}
+		System.out.print(dp[count]);
+	}
+}

@@ -1,0 +1,86 @@
+import java.util.Scanner;
+class queue1{
+	private int front;
+	private int rear;
+	private int maxsize;
+	private int que[];
+	queue1(){
+		this.front=0;
+		this.rear=0;
+		this.maxsize=100001 ;
+		que=new int[100001];
+	}
+	public void push(int item) {
+		if(((rear+1)%maxsize) == front)
+			return;
+		rear=(rear+1)%maxsize;
+		que[rear]=item;
+	}
+	public void pop() {
+		if(front==rear)
+			System.out.println(-1);
+		else {
+			front=(front+1)%maxsize;
+			System.out.println(que[front]);
+		}
+	}
+	public void size() {
+		if(rear>=front)
+			System.out.println(rear-front);
+		else
+			System.out.println(front-rear);
+	}
+	public void empty() {
+		if(front==rear)
+			System.out.println(1);
+		else
+			System.out.println(0);
+	}
+	public void front() {
+		if(front==rear)
+			System.out.println(-1);
+		else
+			System.out.println(que[front+1]);
+	}
+	public void back() {
+		if(front==rear)
+			System.out.println(-1);
+		else
+			System.out.println(que[rear]);
+	}
+}
+public class Main {
+	public static void main(String [] args) {
+		int count,item;
+		String othor;
+		
+		Scanner a=new Scanner(System.in);
+		count=a.nextInt();
+		queue1 q1=new queue1();
+		for(int i=0;i<count;i++) {
+			othor=a.next();
+			
+			if(othor.equals("push")) {
+				item=a.nextInt();
+				q1.push(item);
+			}
+			else if(othor.equals("pop")) 
+				q1.pop();
+			else if(othor.equals("size"))
+				q1.size();
+			else if(othor.equals("empty"))
+				q1.empty();
+			else if(othor.equals("front"))
+				q1.front();
+			else if(othor.equals("back"))
+				q1.back();
+			else {
+				System.out.println("NO");
+				return;
+			}
+		}
+		a.close();
+		return;
+		
+	}
+}

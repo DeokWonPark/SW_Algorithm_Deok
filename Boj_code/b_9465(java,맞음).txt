@@ -1,0 +1,36 @@
+import java.util.*;
+import java.io.*;
+public class b_9465 {
+
+	public static void main(String [] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb=new StringBuilder();
+		
+		int count=Integer.parseInt(bf.readLine());
+		for(int i=0;i<count;i++) {
+			int N=Integer.parseInt(bf.readLine());
+			int S[][]=new int[2][N];
+			String temp1[]=bf.readLine().split(" ");
+			String temp2[]=bf.readLine().split(" ");
+			// in it//
+			for(int j=0;j<temp1.length;j++) {
+				S[0][j]=Integer.parseInt(temp1[j]);
+				S[1][j]=Integer.parseInt(temp2[j]);
+			}
+			
+			int dp[][]=new int [N][3];
+			dp[0][0]=0;
+			dp[0][1]=S[0][0];
+			dp[0][2]=S[1][0];
+			
+			for(int j=1;j<N;j++) {
+				dp[j][0]=Math.max(Math.max(dp[j-1][0], dp[j-1][1]), dp[j-1][2]);
+				dp[j][1]=Math.max(dp[j-1][0], dp[j-1][2])+S[0][j];
+				dp[j][2]=Math.max(dp[j-1][0], dp[j-1][1])+S[1][j];
+			}
+			int max=Math.max(Math.max(dp[N-1][0], dp[N-1][1]), dp[N-1][2]);
+			sb.append(max+"\n");
+		}
+		System.out.print(sb);
+	}
+}

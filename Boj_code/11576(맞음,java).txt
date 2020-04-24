@@ -1,0 +1,35 @@
+import java.util.*;
+import java.io.*;
+public class b_11576 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		String line[]=bf.readLine().split(" ");
+		int A=Integer.parseInt(line[0]);
+		int B=Integer.parseInt(line[1]);
+		
+		int count=Integer.parseInt(bf.readLine());
+		String lines=bf.readLine();
+		Stack<Integer>sk=new Stack<Integer>();
+		StringTokenizer st=new StringTokenizer(lines);
+		while(st.hasMoreTokens()) {
+			sk.push(Integer.parseInt(st.nextToken()));
+		}
+		int ten_sum=0;
+		int aa=1;
+		while(!sk.empty()) {
+			int tok=sk.pop();
+			ten_sum+=(tok*aa);
+			aa*=A;
+		}
+		while(ten_sum>0) {
+			sk.push(ten_sum%B);
+			ten_sum/=B;
+		}
+		StringBuilder sb=new StringBuilder();
+		while(!sk.empty()) {
+			sb.append(sk.pop()+" ");
+		}
+		System.out.print(sb);
+	}
+}

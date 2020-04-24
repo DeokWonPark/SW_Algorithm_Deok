@@ -1,0 +1,180 @@
+import java.util.Scanner;
+import java.util.Vector;
+public class b_6603 {
+
+	public static void main(String[] args) {
+		
+		int count=1;
+		int k=0;
+		int ck=0;
+		
+		Scanner a= new Scanner(System.in);
+		
+		while(count!=0) {
+			k=0;
+			count=a.nextInt();
+			if(count==0)
+				break;
+			if(ck!=0) {
+				System.out.println("");
+			}
+			ck=1;
+			int arr[]=new int[count];
+			
+			for(int i=0;i<count;i++) {
+				arr[i]=a.nextInt();
+			}
+			
+			int distance=count-6;
+			int one,two,three,four,five,six;
+			one=-1;two=-1;three=-1;four=-1;five=-1;six=-1;
+			int tk=0;
+			int temp[][]=new int[1000][13];
+			for(one=count-1;one>=0;one--) {
+				
+				for(two=one-1;two>=0;two--) {
+					if(distance<2) {
+						two=-1;
+						break;
+					}
+					for(three=two-1;three>=0;three--) {
+						if(distance<3) {
+							three=-1;
+							break;
+						}
+						for(four=three-1;four>=0;four--) {
+							if(distance<4) {
+								four=-1;
+								break;
+							}
+							for(five=four-1;five>=0;five--) {
+								if(distance<5) {
+									five=-1;
+									break;
+								}
+								for(six=five-1;six>=0;six--) {
+									if(distance<6) {
+										six=-1;
+										break;
+									}
+									k=0;
+									if(distance==6) {
+										for(int i=0;i<arr.length;i++) {
+											if(i!=one && i!=two && i!=three && i!=four && i!=five && i!=six) {
+												
+												temp[tk][k++]=arr[i];
+											}
+										}
+										tk++;
+										
+									}
+								}
+								k=0;
+								if(distance==5) {
+									for(int i=0;i<arr.length;i++) {
+										if(i!=one && i!=two && i!=three && i!=four && i!=five && i!=six) {
+											
+											temp[tk][k++]=arr[i];
+										}
+									}
+									tk++;
+									
+								}
+							}
+							k=0;
+							if(distance==4) {
+								for(int i=0;i<arr.length;i++) {
+									if(i!=one && i!=two && i!=three && i!=four && i!=five && i!=six) {
+										
+										temp[tk][k++]=arr[i];
+									}
+								}
+								tk++;
+								
+							}
+						}
+						k=0;
+						if(distance==3) {
+							for(int i=0;i<arr.length;i++) {
+								if(i!=one && i!=two && i!=three && i!=four && i!=five && i!=six) {
+									
+									temp[tk][k++]=arr[i];
+								}
+							}
+							tk++;
+							
+						}
+					}
+					k=0;
+					if(distance==2) {
+						for(int i=0;i<arr.length;i++) {
+							if(i!=one && i!=two && i!=three && i!=four && i!=five && i!=six) {
+								
+								temp[tk][k++]=arr[i];
+							}
+						}
+						tk++;
+						
+					}
+				}
+				k=0;
+				if(distance==1) {
+					for(int i=0;i<arr.length;i++) {
+						if(i!=one && i!=two && i!=three && i!=four && i!=five && i!=six) {
+							
+							temp[tk][k++]=arr[i];
+						}
+					}
+					tk++;
+					
+				}
+				
+				int index=-100000;
+				for(int i=0;i<temp.length;i++) {
+					index=-100000;
+					temp[i][6]=0;
+					for(int j=0;j<6;j++) {
+						temp[i][6]+=(temp[i][j]*index);
+						index/=10;
+					}
+				}
+				
+			}
+			
+			Vector<Integer>couarr=new Vector<Integer>();
+			
+			int ckck=-10;
+			while(ckck!=-1) {
+				
+				int cou=0;
+				for(int i=0;i<temp.length;i++) {
+					if(i==0) {
+						ckck=temp[i][6];
+					}
+					if(ckck>temp[i][6]) {
+						ckck=temp[i][6];
+						cou=i;
+					}
+				}
+				temp[cou][6]=-1;
+				if(ckck==-1)
+					break;
+				for(int i=0;i<6;i++) {
+					couarr.add(temp[cou][i]);
+				}
+				
+				
+			}
+
+			for(int i=couarr.size()-6;i>=0;i-=12) {
+				
+				for(int j=0;j<6;j++) {
+					System.out.print(couarr.get(i++)+" ");
+				}
+				
+				System.out.println("");
+			}
+		}
+	
+	}
+}

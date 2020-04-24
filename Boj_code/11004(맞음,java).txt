@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+public class b_11004 {
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		String line[]=bf.readLine().split(" ");
+		int K=Integer.parseInt(line[1]);
+		String lines=bf.readLine();
+		StringTokenizer st=new StringTokenizer(lines);
+		PriorityQueue<Integer> qu=new PriorityQueue<Integer>();
+		while(st.hasMoreTokens()) {
+			qu.offer(Integer.parseInt(st.nextToken()));
+		}
+		for(int i=1;i<K;i++) {
+			qu.poll();
+		}
+		System.out.print(qu.poll());
+	}
+}

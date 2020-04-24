@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(void)
+{
+	int kg,count1=0,count2=0;
+	int i,j,x,y;
+	x = 5000, y = 5000;
+	scanf("%d", &kg);
+
+	for (i = 0; i < (kg / 3 + 1); i++)
+	{
+		for (j = 0; j < (kg / 5 + 1); j++)
+		{
+			if ((3 * i) + (5 * j) == kg)
+			{
+				if ((x + y) > (i + j))
+				{
+					x = i;
+					y = j;
+				}
+			}
+
+		}
+	}
+	if (x == 5000 && y == 5000)
+		printf("-1 \n");
+	else
+		printf("%d \n", x + y);
+		
+	return 0;
+}

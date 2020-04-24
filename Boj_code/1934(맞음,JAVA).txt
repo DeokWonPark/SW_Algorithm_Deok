@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class b_1934 {
+	public static void main(String argc[]) {
+		int count;
+		int num1,num2;
+		int temp1,temp2;
+		
+		Scanner a= new Scanner(System.in);
+		count=a.nextInt();
+		for(int n=0;n<count;n++) {
+			num1=a.nextInt();
+			num2=a.nextInt();
+			
+			temp1=num1;
+			temp2=num2;
+			
+			int i=2;
+			int j=2;
+			
+			while(temp1!=temp2) {
+				if(temp1>temp2) {
+					temp2=num2*i++;
+				}
+				else if(temp1<temp2) {
+					temp1=num1*j++;
+				}
+			}
+			System.out.println(temp1);
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.util.*;
+import java.io.*;
+public class b_1158_2 {
+
+	public static void main(String [] args) throws IOException{
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		String line[]=bf.readLine().split(" ");
+		int N=Integer.parseInt(line[0]);
+		int K=Integer.parseInt(line[1]);
+		
+		ArrayList<Integer> ar= new ArrayList<Integer>();
+		for(int i=1;i<=N;i++) {
+			ar.add(i);
+		}
+		StringBuilder sb=new StringBuilder();
+		sb.append("<");
+		
+		int count=0;
+		int check=0;
+		int n=N;
+		while(!(ar.isEmpty())) {
+			count=(count+(K-1))%n;
+			sb.append(ar.get(count));
+			check++;
+			if(check<N) 
+				sb.append(", ");
+			ar.remove(count);
+			n--;
+		}
+		sb.append(">");
+		System.out.print(sb);
+	}
+}

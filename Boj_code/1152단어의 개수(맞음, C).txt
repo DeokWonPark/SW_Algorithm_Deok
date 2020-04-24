@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(void)
+{
+	int i = 0,count=0;
+	char str[1000001];
+
+	fgets(str, 1000001, stdin);
+
+	while (str[i] != '\n')
+	{
+		if (str[i] == ' ')
+			i++;
+		if (str[i] == '\n')
+			break;
+		while (str[i] != ' ' && str[i]!= '\n')
+		{
+			i++;
+		}
+		count++;
+	}
+	printf("%d \n", count);
+	return 0;
+}

@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+public class b_10989_re {
+
+	public static void main(String [] args) throws IOException{
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		int man[]=new int[10001];
+		for(int i=0;i<count;i++) {
+			int num=Integer.parseInt(bf.readLine());
+			man[num]++;
+		}
+		StringBuilder sb=new StringBuilder();
+		for(int i=1;i<=man.length-1;i++) {
+			for(int j=1;j<=man[i];j++) {
+				sb.append(i+"\n");
+			}
+		}
+		System.out.print(sb);
+	}
+}

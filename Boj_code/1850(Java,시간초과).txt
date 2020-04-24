@@ -1,0 +1,25 @@
+import java.math.*;
+import java.util.*;
+public class b_1850 {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		long x=a.nextLong();
+		long y=a.nextLong();
+
+		String sb1="";
+		String sb2="";
+		for(int i=0;i<x;i++) {
+			sb1+="1";
+		}
+		for(int i=0;i<y;i++) {
+			sb2+="1";
+		}
+
+		BigInteger bx=new BigInteger(sb1);
+		BigInteger by=new BigInteger(sb2);
+		BigInteger bgcd=bx.gcd(by);
+		System.out.println(bgcd);
+	}
+	
+}

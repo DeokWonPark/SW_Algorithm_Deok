@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class b_2309 {
+
+	public static void main(String[] argc) {
+		int people[] = new int[9];
+		int sum=0,temp=0;
+		
+		Scanner a=new Scanner(System.in);
+		
+		for(int i=0;i<9;i++) {
+			people[i]=a.nextInt();
+			sum+=people[i];
+		}
+		Arrays.sort(people);
+		
+		for(int i=0;i<8;i++) { 
+			for(int j=i+1;j<9;j++) {
+				temp=sum;
+				temp-=people[i];
+				temp-=people[j];
+				if(temp==100) {
+					for(int v=0;v<9;v++) {
+						if(people[v]==people[i] || people[v]==people[j])
+							continue;
+						System.out.println(people[v]);
+					}
+					return;
+				}
+			}
+		}
+				
+	}
+}

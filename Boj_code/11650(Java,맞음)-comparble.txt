@@ -1,0 +1,45 @@
+import java.util.*;
+import java.io.*;
+class Point implements Comparable<Point>{
+	int x,y;
+	Point(int x,int y){
+		this.x=x;
+		this.y=y;
+	}
+	public int compareTo(Point that) {
+		if(this.x<that.x) {
+			return -1;
+		}
+		else if(this.x==that.x) {
+			if(this.y<that.y) {
+				return -1;
+			}
+			else if(this.y==that.y)
+				return 0;
+			else
+				return 1;
+		}
+		else
+			return 1;
+	}
+}
+public class b_11650 {
+
+	public static void main(String [] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		int count=Integer.parseInt(bf.readLine());
+		Point xy[]=new Point[count];
+		for(int i=0;i<count;i++) {
+			String [] arr=bf.readLine().split(" ");
+			int x=Integer.parseInt(arr[0]);
+			int y=Integer.parseInt(arr[1]);
+			xy[i]=new Point(x,y);
+		}
+		Arrays.sort(xy);
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<xy.length;i++) {
+			sb.append(xy[i].x+" "+xy[i].y+"\n");
+		}
+		System.out.println(sb);
+	}
+}

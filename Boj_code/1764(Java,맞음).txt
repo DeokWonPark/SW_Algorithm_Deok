@@ -1,0 +1,30 @@
+import java.util.*;
+public class b_1764 {
+
+	public static void main(String [] args) {
+		int count1,count2;
+		Scanner a=new Scanner(System.in);
+		count1=a.nextInt();
+		count2=a.nextInt();
+		
+		TreeSet<String> ear=new TreeSet<String>();
+		TreeSet<String> eye=new TreeSet<String>();
+		for(int i=0;i<count1;i++) {
+			ear.add(a.next());
+		}
+		for(int i=0;i<count2;i++) {
+			eye.add(a.next());
+		}
+		String[] arr=(String[])eye.toArray(new String[eye.size()]);
+		StringBuilder sb=new StringBuilder();
+		int count=0;
+		for(int i=0;i<arr.length;i++) {
+			if(ear.contains(arr[i])) {
+				sb.append(arr[i]+"\n");
+				count++;
+			}
+		}
+		System.out.println(count);
+		System.out.println(sb);
+	}
+}

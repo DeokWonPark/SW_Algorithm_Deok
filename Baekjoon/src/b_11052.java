@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.StringTokenizer;
+public class b_11052 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		
+		int N=Integer.parseInt(bf.readLine());
+		int arr[]=new int[N+1];
+		String line=bf.readLine();
+		StringTokenizer st=new StringTokenizer(line," ");
+		int k=1;
+		while(st.hasMoreTokens()) {
+			arr[k++]=Integer.parseInt(st.nextToken());
+		}
+		
+		for(int i=2;i<=N;i++) {
+			for(int j=1;j<=i/2;j++) {
+				if(arr[i]>arr[j]+arr[i-j]) {
+					arr[i]=arr[j]+arr[i-j];
+				}
+			}
+		}
+		System.out.print(arr[N]);
+	}
+}

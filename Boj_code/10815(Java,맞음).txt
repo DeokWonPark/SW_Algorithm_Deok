@@ -1,0 +1,24 @@
+import java.util.*;
+public class b_10815 {
+
+	public static void main(String [] args) {
+		Scanner a=new Scanner(System.in);
+		int count1=a.nextInt();
+		
+		HashSet<Integer> hs=new HashSet<Integer>();
+		for(int i=0;i<count1;i++) {
+			hs.add(a.nextInt());
+		}
+		int count2=a.nextInt();
+		StringBuilder st=new StringBuilder();
+		for(int i=0;i<count2;i++) {
+			if(hs.contains(a.nextInt())) {
+				st.append(1+" ");
+			}
+			else {
+				st.append(0+" ");
+			}
+		}
+		System.out.println(st);
+	}
+}

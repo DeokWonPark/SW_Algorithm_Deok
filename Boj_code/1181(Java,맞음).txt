@@ -1,0 +1,27 @@
+import java.util.*;
+public class b_1181 {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		TreeSet<String>tm=new TreeSet<String>();
+		
+		int count=a.nextInt();
+		for(int i=0;i<count;i++) {
+			tm.add(a.next());
+		}
+		StringBuilder sb=new StringBuilder();
+		String arr[]=(String [])tm.toArray(new String[tm.size()]);
+		int n=1;
+		int check=0;
+		while(check<tm.size()){
+			for(int i=0;i<tm.size();i++) {
+				if(arr[i].length()==n) {
+					sb.append(arr[i]+"\n");
+					check++;
+				}
+			}
+			n++;
+		}
+		System.out.println(sb);
+	}
+}

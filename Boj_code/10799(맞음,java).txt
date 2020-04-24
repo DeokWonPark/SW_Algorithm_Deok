@@ -1,0 +1,35 @@
+import java.util.*;
+import java.io.*;
+public class b_10799 {
+
+	public static void main(String[] args) throws IOException{
+		
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		
+		String line= bf.readLine();
+		Stack<Character> buf=new Stack<Character>();
+		boolean checksum=true;
+		int sum=0;
+		
+		for(int i=0;i<line.length();i++) {
+			char tok=line.charAt(i);
+			
+			if(tok=='(') {
+				checksum=true;
+				buf.push(tok);
+			}
+			else if(tok==')') {
+				if(checksum==true) {
+					buf.pop();
+					sum+=buf.size();
+				}
+				else {
+					buf.pop();
+					sum++;
+				}
+				checksum=false;
+			}
+		}
+		System.out.println(sum);
+	}
+}

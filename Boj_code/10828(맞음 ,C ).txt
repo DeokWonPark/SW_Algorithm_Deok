@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<string.h>
+#define max_size   10000
+int steck[max_size];
+int topc = -1;
+void push(int item)
+{
+	steck[++topc] = item;
+}
+void pop()
+{
+	if (topc == -1)
+	{
+		printf("-1 \n");
+		return;
+	}
+	printf("%d \n", steck[topc--]);
+}
+void size()
+{
+	printf("%d \n", topc + 1);
+}
+void empty()
+{
+	if (topc == -1)
+	{
+		printf("1 \n");
+		return;
+	}
+	else 
+	{
+		printf("0 \n");
+		return;
+	}
+}
+void top()
+{
+	if (topc == -1)
+	{
+		printf("-1 \n");
+		return;
+	}
+	printf("%d \n", steck[topc]);
+}
+int main(void)
+{
+	int count,item;
+	char mig[10];
+	int i;
+	
+	scanf("%d", &count);
+	for (i = 0; i < count; i++)
+	{
+		scanf("%s", mig);
+		if (!strcmp("push", mig))
+		{
+			scanf("%d", &item);
+			push(item);
+		}
+		else if (!strcmp("pop", mig))
+			pop();
+		else if (!strcmp("size", mig))
+			size();
+		else if (!strcmp("top", mig))
+			top();
+		else
+			empty();
+	}
+	return 0;
+}
