@@ -6,7 +6,7 @@
 >
 > + 백준 온라인저지 1463 : 1로 만들기
 >
->   > 풀이:  [1로만들기 풀이] ([https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/1%EB%A1%9C%EB%A7%8C%EB%93%A4%EA%B8%B0(1463).md](https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/1로만들기(1463).md)).
+>   > 풀이:  [1로만들기 풀이] ([https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/1%EB%A1%9C%EB%A7%8C%EB%93%A4%EA%B8%B0(1463).md](https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/1로만들기(1463).md))
 
 > + 백준 온라인저지 15649 : N 과 M
 > + 백준 온라인저지 6588 : 골드바흐의 추측
