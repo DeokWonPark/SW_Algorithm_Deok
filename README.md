@@ -10,7 +10,7 @@
 >
 > + 백준 온라인저지 6588 : 골드바흐의 추측
 >
->   > [골드바흐의 추측 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/골드바흐의 추측(6588).md]
+>   > [골드바흐의 추측 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B3%A8%EB%93%9C%EB%B0%94%ED%9D%90%EC%9D%98%20%EC%B6%94%EC%B8%A1(6588).md]
 >
 > + 백준 온라인저지 17103 : 골드바흐 파티션
 >
