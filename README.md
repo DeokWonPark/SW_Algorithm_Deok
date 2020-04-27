@@ -97,3 +97,7 @@
 > + 백준 온라인저지 14226 : 이모티콘
 >
 > + 백준 온라인저지 1261 : 알고스팟
+>
+>   > [알고스팟 풀이]
+[https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%95%8C%EA%B3%A0%EC%8A%A4%ED%8C%9F(1261).md]
+>
