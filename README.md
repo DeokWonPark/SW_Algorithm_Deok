@@ -95,7 +95,7 @@
 > + 백준 온라인저지 16947 : 서울 지하철 2호선
 >
 > + 백준 온라인저지 14226 : 이모티콘
->   > [ 풀이]
+>   > [이모티콘 풀이]
 [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98(14226).md]
 >
 > + 백준 온라인저지 1261 : 알고스팟
