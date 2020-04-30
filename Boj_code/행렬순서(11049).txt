@@ -1,0 +1,37 @@
+import java.io.*;
+public class b_11049 {
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf= new BufferedReader(new InputStreamReader(System.in));
+		
+		int N=Integer.parseInt(bf.readLine());
+		int d[]=new int[N+1];
+		
+		String line1[]=bf.readLine().split(" ");
+		d[0]=Integer.parseInt(line1[0]);
+		d[1]=Integer.parseInt(line1[1]);
+		
+		for(int i=1;i<N;i++) {
+			String line[]=bf.readLine().split(" ");
+			d[i+1]=Integer.parseInt(line[1]);
+		}
+		
+		int c[][]=new int[N+1][N+1];
+		
+		for(int L=1;L<N;L++) {
+			for(int i=1;i<=N-L;i++) {
+				int j=i+L;
+				c[i][j]=Integer.MAX_VALUE;
+				
+				for(int k=i;k<=j-1;k++) {
+					int temp=c[i][k]+c[k+1][j]+(d[i-1]*d[k]*d[j]);
+					if(temp<c[i][j]) {
+						c[i][j]=temp;
+					}
+				}
+			}
+		}
+		System.out.print(c[1][N]);
+	}
+}
+
