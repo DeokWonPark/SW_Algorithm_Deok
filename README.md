@@ -112,3 +112,8 @@
 >   > [트리의 높이와 너비 풀이]
 [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EB%86%92%EC%9D%B4%EC%99%80%20%EB%84%88%EB%B9%84.md]
 >
+> + 백준 온라인저지 11725 : 트리의 부모찾기
+>
+>   > [트리의 부모찾기 풀이]
+[https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EB%B6%80%EB%AA%A8%EC%B0%BE%EA%B8%B0(11725).md]
+>
