@@ -107,4 +107,8 @@
 >
 >   > [카드구매하기2 풀이]
 [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%B9%B4%EB%93%9C%EA%B5%AC%EB%A7%A4%ED%95%98%EA%B8%B02(16914).md]
+>> + 백준 온라인저지 16914 : 카드구매하기2
+>
+>   > [트리의 높이와 너비 풀이]
+[https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EB%86%92%EC%9D%B4%EC%99%80%20%EB%84%88%EB%B9%84.md]
 >
