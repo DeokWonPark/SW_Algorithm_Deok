@@ -1,0 +1,60 @@
+import java.io.*;
+
+class Node{
+	String left;
+	String right;
+	
+	Node(String left_,String right_){
+		this.left=left_;
+		this.right=right_;
+	}
+}
+public class b_1991 {
+	static StringBuilder sb=new StringBuilder();
+	public static void pre(String s,Node n[]) {
+		if(!s.equals(".")) {
+			sb.append(s);
+			int si=s.charAt(0)-65;
+			pre(n[si].left,n);
+			pre(n[si].right,n);
+		}
+	}
+	
+	public static void in(String s,Node n[]) {
+		if(!s.equals(".")) {
+			int si=s.charAt(0)-65;
+			in(n[si].left,n);
+			sb.append(s);
+			in(n[si].right,n);
+		}
+	}
+	
+	public static void post(String s,Node n[]) {
+		if(!s.equals(".")) {
+			int si=s.charAt(0)-65;
+			post(n[si].left,n);
+			post(n[si].right,n);
+			sb.append(s);
+		}
+	}
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		
+		int N=Integer.parseInt(bf.readLine());
+		Node n[]=new Node[N];
+		
+		for(int i=0;i<N;i++) {
+			String lines[]=bf.readLine().split(" ");
+			int node=lines[0].charAt(0)-65;
+			n[node]=new Node(lines[1],lines[2]);
+		}
+		pre("A",n);
+		sb.append("\n");
+		in("A",n);
+		sb.append("\n");
+		post("A",n);
+		sb.append("\n");
+		System.out.print(sb);
+	}
+}
