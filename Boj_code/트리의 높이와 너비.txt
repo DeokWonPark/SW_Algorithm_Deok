@@ -1,0 +1,80 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
+class Node2250{
+	int left;
+	int right;
+	int w,h;
+	Node2250(int left_,int right_){
+		this.left=left_;
+		this.right=right_;
+		this.w=0;
+		this.h=0;
+	}
+}
+
+public class b_2250 {
+	
+	static int w=0;
+	static int max_h=0;
+	private static void height(int s,Node2250[] n,int h,ArrayList<Integer> ar[]) {
+		if(!(s==-1)) {
+			height(n[s].left,n,h+1,ar);
+			n[s].h=h;
+			n[s].w=++w;
+			ar[h].add(w);
+			if(max_h<h)
+				max_h=h;
+			height(n[s].right,n,h+1,ar);
+		}
+	}
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		
+		int N=Integer.parseInt(bf.readLine());
+		Node2250 n[]=new Node2250[N+1];
+		int cnt[]=new int[N+1];
+		
+		for(int i=1;i<N+1;i++) {
+			String lines[]=bf.readLine().split(" ");
+			int left=Integer.parseInt(lines[1]);
+			int right=Integer.parseInt(lines[2]);
+			if(left!=-1) {
+				cnt[left]++;
+			}
+			if(right!=-1) {
+				cnt[right]++;
+			}
+			int count=Integer.parseInt(lines[0]);
+			n[count]=new Node2250(left,right);
+		}
+		
+		int root=0;
+		for(int i=1;i<=N;i++) {
+			if(cnt[i]==0) {
+				root=i;
+			}
+		}
+		
+		ArrayList<Integer> ar[]=(ArrayList<Integer>[])new ArrayList[N+1];
+		
+		for(int i=1;i<N+1;i++) {
+			ar[i]=new ArrayList<Integer>();
+		}
+		height(root,n,1,ar);
+		int max=0;
+		int index=0;
+		for(int i=1;i<=max_h;i++) {
+			//Collections.sort(ar[i]);
+			int f=ar[i].get(0);
+			int l=ar[i].get(ar[i].size()-1);
+			if(max<l-f+1) {
+				max=l-f+1;
+				index=i;
+			}
+		}
+		
+		System.out.print(index+" "+max);
+	}
+}
