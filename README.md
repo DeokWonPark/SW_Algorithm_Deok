@@ -103,3 +103,8 @@
 >   > [알고스팟 풀이]
 [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%95%8C%EA%B3%A0%EC%8A%A4%ED%8C%9F(1261).md]
 >
+> + 백준 온라인저지 16914 : 카드구매하기2
+>
+>   > [카드구매하기2 풀이]
+[https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%B9%B4%EB%93%9C%EA%B5%AC%EB%A7%A4%ED%95%98%EA%B8%B02(16914).md]
+>
