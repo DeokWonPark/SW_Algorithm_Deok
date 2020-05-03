@@ -122,3 +122,8 @@
 >   > [트리의 지름 풀이]
 [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EC%A7%80%EB%A6%84(1167).md]
 >
+> + 백준 온라인저지 10814 : 나이 순 정렬
+>
+>   > [나이 순 정렬 풀이]
+[https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%82%98%EC%9D%B4%20%EC%88%9C%20%EC%A0%95%EB%A0%AC(10814).md]
+>
