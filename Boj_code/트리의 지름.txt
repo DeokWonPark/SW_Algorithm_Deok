@@ -1,0 +1,73 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+class Node1167{
+	int num;
+	int weight;
+	
+	Node1167(int num_,int weight_){
+		this.num=num_;
+		this.weight=weight_;		
+	}
+}
+
+public class b_1167 {
+	static boolean check[];
+	private static void DFS(int s,ArrayList<Node1167>ar[],int dist[],int c_dist) {
+		check[s]=true;
+		dist[s]=c_dist;
+		for(int i=0;i<ar[s].size();i++) {
+			Node1167 y=ar[s].get(i);
+			if(check[y.num]==false) {
+				int d=c_dist+y.weight;
+				DFS(y.num,ar,dist,d);
+			}
+			
+		}
+	}
+
+	public static void main(String[] args)throws IOException{
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+		
+		int N=Integer.parseInt(bf.readLine());
+		check=new boolean[N+1];
+		
+		ArrayList<Node1167> ar[]=(ArrayList<Node1167>[])new ArrayList[N+1];
+		for(int i=1;i<=N;i++) {
+			ar[i]=new ArrayList<Node1167>();
+		}
+		for(int i=1;i<=N;i++) {
+			String lines[]=bf.readLine().split(" ");
+			int n=Integer.parseInt(lines[0]);
+			for(int j=1;!lines[j].equals("-1");j+=2) {
+				int w1=Integer.parseInt(lines[j]);
+				int w2=Integer.parseInt(lines[j+1]);
+				Node1167 node=new Node1167(w1,w2);
+				ar[n].add(node);
+			}
+		}
+		int dist[]=new int[N+1];
+		DFS(1,ar,dist,0);
+		int max_u=0;
+		int u=0;
+		for(int i=1;i<=N;i++) {
+			if(max_u<dist[i]) {
+				max_u=dist[i];
+				u=i;
+			}
+		}
+		for(int i=1;i<=N;i++) {
+			check[i]=false;
+		}
+		DFS(u,ar,dist,0);
+		int max_v=0;
+		int v=0;
+		for(int i=1;i<=N;i++) {
+			if(max_v<dist[i]) {
+				max_v=dist[i];
+				v=i;
+			}
+		}
+		System.out.print(max_v);
+	}
+}
