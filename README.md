@@ -117,3 +117,8 @@
 >   > [트리의 부모찾기 풀이]
 [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EB%B6%80%EB%AA%A8%EC%B0%BE%EA%B8%B0(11725).md]
 >
+> + 백준 온라인저지 11725 : 트리의 지름
+>
+>   > [트리의 지름 풀이]
+[https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EC%A7%80%EB%A6%84(1167).md]
+>
