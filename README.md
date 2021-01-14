@@ -136,7 +136,10 @@
 > + 백준 온라인저지 1062 : 가르침
 >
 >   > [가르침 풀이]
+>   > [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B0%80%EB%A5%B4%EC%B9%A8(1062).md]
+>   
+> + 백준 온라인저지 9466 : 텀 프로젝트
+>
+>   > [텀 프로젝트 풀이]
 >   > []
 >
-
-​			
