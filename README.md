@@ -141,5 +141,28 @@
 > + 백준 온라인저지 9466 : 텀 프로젝트
 >
 >   > [텀 프로젝트 풀이]
->   > []
+>   > [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%85%80%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(9466).md]
 >
+
+
+
+#### KAKAO BLIND - 문제목록
+
+##### 	Kakao2018
+
++ Kakao 2018 - 셔틀버스
+
+  > [셔틀버스 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EC%85%94%ED%8B%80%EB%B2%84%EC%8A%A4.md]
+
++ Kakao 2018 - 캐시
+
+  > [캐시 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EC%BA%90%EC%8B%9C.md]
+
++ Kakao 2018 - 셔틀버스
+
+  > [뉴스 클러스터링 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81.md]
+
++ Kakao 2018 - 프렌즈 4블럭
+
+  > [프렌즈 4블럭 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D.md]
+
