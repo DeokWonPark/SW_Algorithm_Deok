@@ -158,11 +158,23 @@
 
   > [캐시 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EC%BA%90%EC%8B%9C.md]
 
-+ Kakao 2018 - 셔틀버스
++ Kakao 2018 - 뉴스 클러스터링
 
   > [뉴스 클러스터링 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81.md]
 
 + Kakao 2018 - 프렌즈 4블럭
 
   > [프렌즈 4블럭 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D.md]
+  
++ Kakao 2018 - 압축
+
+  > [압축 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EC%95%95%EC%B6%95.md]
+
++ Kakao 2018 - n진수 게임
+
+  > [n진수 게임 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_n%EC%A7%84%EC%88%98%20%EA%B2%8C%EC%9E%84.md]
+
++ Kakao 2018 - 추석 트래픽
+
+  > [추석 트래픽 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EC%B6%94%EC%84%9D%20%ED%8A%B8%EB%9E%98%ED%94%BD.md]
 
