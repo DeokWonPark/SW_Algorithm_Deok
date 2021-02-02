@@ -178,3 +178,15 @@
 
   > [추석 트래픽 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2018_%EC%B6%94%EC%84%9D%20%ED%8A%B8%EB%9E%98%ED%94%BD.md]
 
++ Kakao 2019 - 길 찾기 게임
+
+  > [길 찾기 게임 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019_%EA%B8%B8%20%EC%B0%BE%EA%B8%B0%20%EA%B2%8C%EC%9E%84.md]
+
++ Kakao 2019 - 오픈채팅방
+
+  > [오픈채팅방 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019_%EC%98%A4%ED%94%88%EC%B1%84%ED%8C%85%EB%B0%A9.md]
+
++ Kakao 2019 - 후보키
+
+  > [후보키 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019_%ED%9B%84%EB%B3%B4%ED%82%A4.md]
+
