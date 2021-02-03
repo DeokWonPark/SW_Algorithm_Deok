@@ -1,7 +1,7 @@
 문제
 -----
 
-+ 2019 KAKAO BLIND 수식 최대화
++ 2020 KAKAO 인턴십 수식 최대화
 + https://programmers.co.kr/learn/courses/30/lessons/67257
 
 풀이 
