@@ -2,7 +2,7 @@
 -----
 
 + 2019 KAKAO 인턴십 튜플
-+ https://programmers.co.kr/learn/courses/30/lessons/67259
++ https://programmers.co.kr/learn/courses/30/lessons/64065
 
 풀이 
 ------

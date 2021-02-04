@@ -190,3 +190,19 @@
 
   > [후보키 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019_%ED%9B%84%EB%B3%B4%ED%82%A4.md]
 
++ Kakao 2020인턴십 - 경주로 건설
+
+  > [경주로 건설 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2020%EC%9D%B8%ED%84%B4%EC%8B%AD_%20%EA%B2%BD%EC%A3%BC%EB%A1%9C%20%EA%B1%B4%EC%84%A4.md]
+
++ Kakao 2020인턴십 - 보석쇼핑
+
+  > [보석쇼핑 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2020%EC%9D%B8%ED%84%B4%EC%8B%AD_%20%EB%B3%B4%EC%84%9D%EC%87%BC%ED%95%91.md]
+
++ Kakao 2020인턴십 - 수식 최대화
+
+  > [수식최대화 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2020%EC%9D%B8%ED%84%B4%EC%8B%AD_%20%EC%88%98%EC%8B%9D%20%EC%B5%9C%EB%8C%80%ED%99%94.md]
+
++ Kakao 2019인턴십 - 튜플
+
+  > [튜플 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019%EC%9D%B8%ED%84%B4%EC%8B%AD_%ED%8A%9C%ED%94%8C.md]
+
