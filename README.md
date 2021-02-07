@@ -205,4 +205,11 @@
 + Kakao 2019인턴십 - 튜플
 
   > [튜플 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019%EC%9D%B8%ED%84%B4%EC%8B%AD_%ED%8A%9C%ED%94%8C.md]
+  
++ Kakao 2019인턴십 - 불량 사용자
 
+  > [불량사용자 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019%EC%9D%B8%ED%84%B4%EC%8B%AD_%EB%B6%88%EB%9F%89%20%EC%82%AC%EC%9A%A9%EC%9E%90.md]
+
++ Kakao 2019인턴십 - 징검다리 건너기
+
+  > [징검다리 건너기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2019%EC%9D%B8%ED%84%B4%EC%8B%AD_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC%20%EA%B1%B4%EB%84%88%EA%B8%B0.md]
