@@ -2,118 +2,54 @@
 -----
 
 + 2022 KAKAO BLIND 메뉴리뉴얼
-+ https://programmers.co.kr/learn/courses/30/lessons/72411
++ https://programmers.co.kr/learn/courses/30/lessons/72413
 
 풀이 
 ------
 
-+ 알고리즘 - 완전탐색
++ 알고리즘 - 최단경로[플로이드-워셜]
+1. 플로이드 워셜 알고리즘을 사용해서 모든 경로에 대한 최단경로를 구해준다.
+  2. 모든 노드들 i 에 대해서 s부터 i, i 부터 a, i부터 b의 합의 최소경로를 구한다.
+   - min(map [s] [i] +map[i] [a] + map[i] [b])
 
-  
++ 시간복잡도 O(N^3)
 
 + 코드
 
   ``` javaScript
-  const check=new Set();
-  function solution(orders, course) {
-      const result=[];
-      const answer =[];
+  function solution(n, s, a, b, fares) {
+      let answer = Number.MAX_SAFE_INTEGER;
   
-      for(let i of course){
-          answer[i]=[];
-      }
-  
-      const order=[];
-      for(let i in orders){
-          order[i]=[];
-          for(let j=0;j<orders[i].length;j++){
-              order[i].push(orders[i][j]);
-          }
-          order[i].sort();
-      }
-  
-      for(let i of course){
-          for(let j in order){
-              search(order[j],"",0,0,i,answer);
-          }
-      }
-  
-      for(let i of course){
-          answer[i].sort();
-          let max=0;
-          let max_str=[];
-          let s="";
-          let cur=1;
-          for(let j of answer[i]){
-              if(s===""){
-                  s=j;
-                  if(max<cur){
-                      max=cur;
-                  }
+      const map=[];
+      for(let i=1;i<=n;i++){
+          map[i]=[0];
+          for(let j=1;j<=n;j++){
+              if(i===j){
+                  map[i].push(0);
                   continue;
               }
-              if(s===j){
-                  cur++;
-              }
-              else{
-                  if(max<cur){
-                      max=cur;
-                  }
-                  s=j;
-                  cur=1;
-              }
-          }
-          if(cur!=1){
-              if(max<cur){
-                  max=cur;
-              }
-          }
-          cur=1;
-          s="";
-          for(let j of answer[i]){
-              if(s===""){
-                  s=j;
-                  continue
-              }
-              if(s===j){
-                  cur++;
-              }
-              else{
-                  if(max===cur){
-                      max_str.push(s);
-                  }
-                  s=j;
-                  cur=1;
-              }
-          }
-          if(max===cur){
-              max_str.push(s);
-          }
-          for(let j of max_str){
-              result.push(j);
+              map[i].push(1000001);
           }
       }
   
-      result.sort();
-      return result;
-  }
-  
-  function search(arr,str,start,index,num,answer){
-      if(start===num){
-          if(check.has(str)){
-              answer[num].push(str);
-          }
-          else{
-              check.add(str);
-          }
-          return;
+      for(let i in fares){
+          const cur=fares[i];
+          map[cur[0]][cur[1]]=cur[2];
+          map[cur[1]][cur[0]]=cur[2];
       }
   
-      if(index>=arr.length){
-          return;
+      for(let k=1;k<=n;k++){
+          for(let i=1;i<=n;i++){
+              for(let j=1;j<=n;j++){
+                  map[i][j]=Math.min(map[i][j],map[i][k]+map[k][j]);
+              }
+          }
       }
-      search(arr,str,start,index+1,num,answer);
-      search(arr,str+arr[index],start+1,index+1,num,answer);
+  
+      for(let i=1;i<=n;i++){
+          answer=Math.min(answer,map[s][i]+map[i][a]+map[i][b]);
+      }
+      return answer;
   }
   ```
   
