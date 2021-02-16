@@ -142,6 +142,18 @@
 >
 >   > [텀 프로젝트 풀이]
 >   > [https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%85%80%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(9466).md]
+>   
+> + 백준 온라인저지 1504 : 특정한 최단 경로
+>
+>   > [특정한 최단경로 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8A%B9%EC%A0%95%ED%95%9C%20%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C(1504).md]
+>
+> + 백준 온라인저지 1766: 문제집
+>
+>   > [문제집 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%AC%B8%EC%A0%9C%EC%A7%91(1766).md]
+>
+> + 백준 온라인저지 1976 : 여행 가자
+>
+>   > [여행 가자 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%97%AC%ED%96%89%20%EA%B0%80%EC%9E%90(1976).md]
 >
 
 
