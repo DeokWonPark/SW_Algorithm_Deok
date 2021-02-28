@@ -154,7 +154,7 @@
 > + 백준 온라인저지 1976 : 여행 가자
 >
 >   > [여행 가자 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%97%AC%ED%96%89%20%EA%B0%80%EC%9E%90(1976).md]
->   
+>
 > + 백준 온라인저지 9205: 맥주 마시면서 걸어가기
 >
 >   > [맥주 마시면서 걸어가기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%A5%EC%A3%BC%20%EB%A7%88%EC%8B%9C%EB%A9%B4%EC%84%9C%20%EA%B1%B8%EC%96%B4%EA%B0%80%EA%B8%B0(9205).md]
@@ -162,6 +162,14 @@
 > + 백준 온라인저지 5693: 이진 검색 트리
 >
 >   > [이진 검색 트리 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89%20%ED%8A%B8%EB%A6%AC(5693).md]
+>
+> + 백준 온라인저지 1747: 소수&팰린드롬
+>
+>   > [소수&팰린드롬 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%86%8C%EC%88%98%20%26%20%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC(1747).md]
+>   
+> + 백준 온라인저지 2666: 벽장문 이동
+>
+>   > [벽장문 이동 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B2%BD%EC%9E%A5%EB%AC%B8%20%EC%9D%B4%EB%8F%99(2666).md]
 >
 
 
