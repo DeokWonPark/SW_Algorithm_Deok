@@ -166,10 +166,26 @@
 > + 백준 온라인저지 1747: 소수&팰린드롬
 >
 >   > [소수&팰린드롬 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%86%8C%EC%88%98%20%26%20%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC(1747).md]
->   
+>
 > + 백준 온라인저지 2666: 벽장문 이동
 >
 >   > [벽장문 이동 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B2%BD%EC%9E%A5%EB%AC%B8%20%EC%9D%B4%EB%8F%99(2666).md]
+>
+> + 백준 온라인저지 14225: 부분수열의 합
+>
+>   > [부분수열의 합 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B6%80%EB%B6%84%EC%88%98%EC%97%B4%EC%9D%98%20%ED%95%A9(14225).md]
+>
+> + 백준 온라인저지 16637: 괄호 추가하기
+>
+>   > [괄호 추가하기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B4%84%ED%98%B8%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0(16637).md]
+>
+> + 백준 온라인저지 2458: 키 순서
+>
+>   > [키 순서 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%82%A4%20%EC%88%9C%EC%84%9C(2458).md]
+>   
+> + 백준 온라인저지 2668: 숫자 고르기
+>
+>   > [숫자 고르기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%88%AB%EC%9E%90%EA%B3%A0%EB%A5%B4%EA%B8%B0(2668).md]
 >
 
 
