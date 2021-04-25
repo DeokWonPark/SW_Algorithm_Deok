@@ -198,10 +198,50 @@
 > + 백준 온라인저지 2660: 회장뽑기
 >
 >   > [회장뽑기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%9A%8C%EC%9E%A5%EB%BD%91%EA%B8%B0(2660).md]
->   
+>
 > + 백준 온라인저지 2660: 비밀번호
 >
 >   > [비밀번호 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8(13908).md]
+>
+> + 백준 온라인저지 17141: 연구소2
+>
+>   > [연구소2 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%97%B0%EA%B5%AC%EC%86%8C2(17141).md]
+>
+> + 백준 온라인저지 7490: 0 만들기
+>
+>   > [0 만들기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/0%20%EB%A7%8C%EB%93%A4%EA%B8%B0(7490).md]
+>
+> + 백준 온라인저지 16509: 장군
+>
+>   > [장군 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%9E%A5%EA%B5%B0(16509).md]
+>
+> + 백준 온라인저지 2212: 센서
+>
+>   > [센서 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%84%BC%EC%84%9C(2212).md]
+>
+> + 백준 온라인저지 11000: 강의실 배정
+>
+>   > [강의실 배정 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B0%95%EC%9D%98%EC%8B%A4%20%EB%B0%B0%EC%A0%95(11000).md]
+>
+> + 백준 온라인저지 1941: 소문난 칠공주
+>
+>   > [소문난 칠공주 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC(1941).md]
+>
+> + 백준 온라인저지 1092: 배
+>
+>   > [배 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B0%B0(1092).md]
+>
+> + 백준 온라인저지 16932: 모양 만들기
+>
+>   > [모양만들기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%AA%A8%EC%96%91%20%EB%A7%8C%EB%93%A4%EA%B8%B0(16932).md]
+>
+> + 백준 온라인저지 2457: 공주님의 정원
+>
+>   > [공주님의 정원 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B3%B5%EC%A3%BC%EB%8B%98%EC%9D%98%20%EC%A0%95%EC%9B%90(2457).md]
+>   
+> + 백준 온라인저지 4991: 로봇 청소기
+>
+>   > [로봇 청소기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0(4991).md]
 >
 
 
