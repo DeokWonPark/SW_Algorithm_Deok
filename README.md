@@ -238,10 +238,18 @@
 > + 백준 온라인저지 2457: 공주님의 정원
 >
 >   > [공주님의 정원 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B3%B5%EC%A3%BC%EB%8B%98%EC%9D%98%20%EC%A0%95%EC%9B%90(2457).md]
->   
+>
 > + 백준 온라인저지 4991: 로봇 청소기
 >
 >   > [로봇 청소기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0(4991).md]
+>
+> + 백준 온라인저지 5430: AC
+>
+>   > [AC 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/AC(5430).md]
+>   
+> + 백준 온라인저지 10942: 펠린드롬?
+>
+>   > [펠린드롬? 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8E%A0%EB%A6%B0%EB%93%9C%EB%A1%AC(10942).md]
 >
 
 
