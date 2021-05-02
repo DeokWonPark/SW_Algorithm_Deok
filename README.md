@@ -246,10 +246,14 @@
 > + 백준 온라인저지 5430: AC
 >
 >   > [AC 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/AC(5430).md]
->   
+>
 > + 백준 온라인저지 10942: 펠린드롬?
 >
 >   > [펠린드롬? 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8E%A0%EB%A6%B0%EB%93%9C%EB%A1%AC(10942).md]
+>   
+> + 백준 온라인저지 13711: LCS 4
+>
+>   > [LCS 4 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/LCS%204(13711).md]
 >
 
 
