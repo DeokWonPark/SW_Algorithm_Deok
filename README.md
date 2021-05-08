@@ -250,10 +250,18 @@
 > + 백준 온라인저지 10942: 펠린드롬?
 >
 >   > [펠린드롬? 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%8E%A0%EB%A6%B0%EB%93%9C%EB%A1%AC(10942).md]
->   
+>
 > + 백준 온라인저지 13711: LCS 4
 >
 >   > [LCS 4 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/LCS%204(13711).md]
+>
+> + 백준 온라인저지 16916: 부분 문자열
+>
+>   > [부분 문자열 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B6%80%EB%B6%84%20%EB%AC%B8%EC%9E%90%EC%97%B4(16916).md]
+>   
+> + 백준 온라인저지 1786: 찾기
+>
+>   > [찾기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%B0%BE%EA%B8%B0(1786).md]
 >
 
 
