@@ -204,10 +204,26 @@
 > + 백준 온라인저지 20057: 마법사 상어와 토네이도
 >
 >   > [마법사 상어와 토네이도 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%ED%86%A0%EB%84%A4%EC%9D%B4%EB%8F%84(20057).md]
->   
+>
 > + 백준 온라인저지 20058: 마법사 상어와 파이어스톰
 >
 >   > [마법사 상어와 파이어스톰 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%ED%8C%8C%EC%9D%B4%EC%96%B4%EC%8A%A4%ED%86%B0(20058).md]
+>
+> + 백준 온라인저지 18808: 스티커 붙이기
+>
+>   > [스티커 붙이기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%8A%A4%ED%8B%B0%EC%BB%A4%20%EB%B6%99%EC%9D%B4%EA%B8%B0(18808).md]
+>
+> + 백준 온라인저지 2470: 두 용액
+>
+>   > [두 용액 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%91%90%20%EC%9A%A9%EC%95%A1(2470).md]
+>
+> + 백준 온라인저지 11559: Puyo Puyo
+>
+>   > [Puyo Puyo 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/Puyo%20Puyo(11559).md]
+>   
+> + 백준 온라인저지 1981: 배열에서 이동
+>
+>   > [배열에서 이동 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%8F%99(1981).md]
 >
 
 
@@ -303,3 +319,29 @@
 + Kakao 2021 - 합승 택시요금
 
   > [합승 택시요금 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Kakao/Kakao2021_%ED%95%A9%EC%8A%B9%20%ED%83%9D%EC%8B%9C%EC%9A%94%EA%B8%88.md]
+
+
+
+
+
+#### 삼성 SW 역량테스트 - 문제목록
+
++ Boj  19236: 청소년 상어
+
+  > [청소년 상어 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%B2%AD%EC%86%8C%EB%85%84%20%EC%83%81%EC%96%B4(19236).md]
+
++ Boj  19237: 어른 상어
+
+  > [어른 상어 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%96%B4%EB%A5%B8%20%EC%83%81%EC%96%B4(19237).md]
+
++ Boj 20056: 마법사 상어와 파이어볼
+
+  > [마법사 상어와 파이어볼 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%ED%8C%8C%EC%9D%B4%EC%96%B4%EB%B3%BC(20056).md]
+
++ Boj  20057: 마법사 상어와 토네이도
+
+  > [마법사 상어와 토네이도 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%ED%86%A0%EB%84%A4%EC%9D%B4%EB%8F%84(20057).md]
+
++ Boj  20058: 마법사 상어와 파이어스톰
+
+  > [마법사 상어와 파이어스톰 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%ED%8C%8C%EC%9D%B4%EC%96%B4%EC%8A%A4%ED%86%B0(20058).md]
