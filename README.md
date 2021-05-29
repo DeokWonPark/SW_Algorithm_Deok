@@ -345,3 +345,10 @@
 + Boj  20058: 마법사 상어와 파이어스톰
 
   > [마법사 상어와 파이어스톰 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%ED%8C%8C%EC%9D%B4%EC%96%B4%EC%8A%A4%ED%86%B0(20058).md]
+  
++ Boj  12100: 2048 Easy
+
+  > [2048 Easy 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/2048%20Easy(12100).md]
+
+
+
