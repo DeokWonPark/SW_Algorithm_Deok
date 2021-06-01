@@ -349,6 +349,42 @@
 + Boj  12100: 2048 Easy
 
   > [2048 Easy 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/2048%20Easy(12100).md]
+  
++ Boj  15685: 드래곤 커브
+
+  > [드래곤 커브 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%93%9C%EB%9E%98%EA%B3%A4%20%EC%BB%A4%EB%B8%8C(15685).md]
+  
++ Boj  17142: 연구소 3
+
+  > [연구소3 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%97%B0%EA%B5%AC%EC%86%8C3(17142).md]
+  
++ Boj  5373: 큐빙
+
+  > [큐빙 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%ED%81%90%EB%B9%99(5373).md]
+  
++ Boj  17143: 낚시왕
+
+  > [낚시왕 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%82%9A%EC%8B%9C%EC%99%95(17143).md]
+  
++ Boj  17779: 게리맨더링2
+
+  > [게리맨더링2 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EA%B2%8C%EB%A6%AC%EB%A7%A8%EB%8D%94%EB%A7%812(17779).md]
+  
++ Boj  17852: 새로운 게임2
+
+  > [새로운 게임2 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%83%88%EB%A1%9C%EC%9A%B4%20%EA%B2%8C%EC%9E%842(17837).md]
+  
++ Boj  17822: 원판 돌리기
+
+  > [원판 돌리기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%9B%90%ED%8C%90%20%EB%8F%8C%EB%A6%AC%EA%B8%B0(17822).md]
+  
++ Boj  19238: 스타트 택시
+
+  > [스타트 택시 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%8A%A4%ED%83%80%ED%8A%B8%ED%83%9D%EC%8B%9C(19238).md]
+  
++ Boj  20061: 모노미노도미노2
+
+  > [모노미노도미노2 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%AA%A8%EB%85%B8%EB%AF%B8%EB%85%B8%EB%8F%84%EB%AF%B8%EB%85%B82(20061).md]
 
 
 
