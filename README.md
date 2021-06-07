@@ -385,6 +385,46 @@
 + Boj  20061: 모노미노도미노2
 
   > [모노미노도미노2 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%AA%A8%EB%85%B8%EB%AF%B8%EB%85%B8%EB%8F%84%EB%AF%B8%EB%85%B82(20061).md]
+  
++ Boj  21609: 상어 중학교
+
+  > [상어 중학교 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%83%81%EC%96%B4%20%EC%A4%91%ED%95%99%EA%B5%90(21609).md]
+  
++ Boj  21610: 마법사 상어와 비바라기
+
+  > [마법사 상어와 비바라기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%EB%B9%84%EB%B0%94%EB%9D%BC%EA%B8%B0(21610).md]
+  
++ Boj  21611: 마법사 상어와 블리자드
+
+  > [마법사 상어와 블리자드 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%A7%88%EB%B2%95%EC%82%AC%20%EC%83%81%EC%96%B4%EC%99%80%20%EB%B8%94%EB%A6%AC%EC%9E%90%EB%93%9C(21611).md]
+  
++ Boj  17406: 사다리 조작
+
+  > [사다리 조작 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%82%AC%EB%8B%A4%EB%A6%AC%20%EC%A1%B0%EC%9E%91(15684).md]
+  
++ Boj  17136: 색종이 붙이기
+
+  > [색종이 붙이기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%83%89%EC%A2%85%EC%9D%B4%20%EB%B6%99%EC%9D%B4%EA%B8%B0(17136).md]
+  
++ Boj  17281: 야구
+
+  > [야구 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%95%BC%EA%B5%AC(17281).md]
+  
++ Boj  17406: 배열돌리기4
+
+  > [배열돌리기 4 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%B0%B0%EC%97%B4%20%EB%8F%8C%EB%A6%AC%EA%B8%B04(17406).md]
+  
++ Boj  17472: 다리 만들기2
+
+  > [다리 만들기2 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%8B%A4%EB%A6%AC%EB%A7%8C%EB%93%A4%EA%B8%B0%202(17472).md]
+  
++ Boj  16985: Maaaaaaaaaze
+
+  > [Maaaaaaaaaze 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/Maaaaaaaaaze(16985).md]
+  
++ Boj  16988: Baaaaaaaaduk2 (Easy)
+
+  > [Baaaaaaaaduk2 (Easy) 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/Baaaaaaaaaduk2(Easy)(16988).md]
 
 
 
