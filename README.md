@@ -425,6 +425,22 @@
 + Boj  16988: Baaaaaaaaduk2 (Easy)
 
   > [Baaaaaaaaduk2 (Easy) 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/Baaaaaaaaaduk2(Easy)(16988).md]
+  
++ Boj  1938: 통나무 옮기기
+
+  > [통나무 옮기기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%ED%86%B5%EB%82%98%EB%AC%B4%20%EC%98%AE%EA%B8%B0%EA%B8%B0(1938).md]
+  
++ Boj  1600: 말이 되고픈 원숭이
+
+  > [말이 되고픈 원숭이 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EB%A7%90%EC%9D%B4%20%EB%90%98%EA%B3%A0%ED%94%88%20%EC%9B%90%EC%88%AD%EC%9D%B4(1600).md]
+  
++ Boj  17244: 아맞다우산
+
+  > [아맞다우산 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%95%84%EB%A7%9E%EB%8B%A4%EC%9A%B0%EC%82%B0(17244).md]
+  
++ Boj  16137: 견우와 직녀
+
+  > [견우와 직녀 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EA%B2%AC%EC%9A%B0%EC%99%80%20%EC%A7%81%EB%85%80(16137).md]
 
 
 
