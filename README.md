@@ -220,10 +220,18 @@
 > + 백준 온라인저지 11559: Puyo Puyo
 >
 >   > [Puyo Puyo 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/Puyo%20Puyo(11559).md]
->   
+>
 > + 백준 온라인저지 1981: 배열에서 이동
 >
 >   > [배열에서 이동 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%8F%99(1981).md]
+>
+> + 백준 온라인저지 12764: 싸지방에 간 준하
+>
+>   > [싸지방에 간 준하 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%8B%B8%EC%A7%80%EB%B0%A9%EC%97%90%20%EA%B0%84%20%EC%A4%80%ED%95%98(12764).md]
+>   
+> + 백준 온라인저지 3109: 빵집
+>
+>   > [빵집 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B9%B5%EC%A7%91(3109).md]
 >
 
 
@@ -441,6 +449,10 @@
 + Boj  16137: 견우와 직녀
 
   > [견우와 직녀 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EA%B2%AC%EC%9A%B0%EC%99%80%20%EC%A7%81%EB%85%80(16137).md]
+  
++ Boj  2234: 성곽
+
+  > [성곽 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Samsung_SW/%EC%84%B1%EA%B3%BD(2234).md]
 
 
 
