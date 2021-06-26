@@ -228,11 +228,36 @@
 > + 백준 온라인저지 12764: 싸지방에 간 준하
 >
 >   > [싸지방에 간 준하 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%8B%B8%EC%A7%80%EB%B0%A9%EC%97%90%20%EA%B0%84%20%EC%A4%80%ED%95%98(12764).md]
->   
+>
 > + 백준 온라인저지 3109: 빵집
 >
 >   > [빵집 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B9%B5%EC%A7%91(3109).md]
 >
+> + 백준 온라인저지 4577: 소코반
+>
+>   > [소코반 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%86%8C%EC%BD%94%EB%B0%98(4577).md]
+>
+> + 백준 온라인저지 1285: 동전 뒤집기
+>
+>   > [동전 뒤집기 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%8F%99%EC%A0%84%20%EB%92%A4%EC%A7%91%EA%B8%B0(1285).md]
+>
+> + 백준 온라인저지 1079: 마피아
+>
+>   > [마피아 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%A7%88%ED%94%BC%EC%95%84(1079).md]
+>
+> + 백준 온라인저지 1202: 보석 도둑
+>
+>   > [보석 도둑 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B3%B4%EC%84%9D%20%EB%8F%84%EB%91%91(1202).md]
+>
+> + 백준 온라인저지 2109: 순회강연
+>
+>   > [순회 강연 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%88%9C%ED%9A%8C%EA%B0%95%EC%97%B0(2109).md]
+>   
+> + 백준 온라인저지 14003: 가장 긴 증가하는 부분 수열5
+>
+>   > [가장 긴 증가하는 부분 수열5 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B45(14003).md]
+>
+> 
 
 
 
