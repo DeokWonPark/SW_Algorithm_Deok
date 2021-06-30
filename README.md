@@ -252,10 +252,18 @@
 > + 백준 온라인저지 2109: 순회강연
 >
 >   > [순회 강연 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%88%9C%ED%9A%8C%EA%B0%95%EC%97%B0(2109).md]
->   
+>
 > + 백준 온라인저지 14003: 가장 긴 증가하는 부분 수열5
 >
 >   > [가장 긴 증가하는 부분 수열5 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B45(14003).md]
+>
+> + 백준 온라인저지 1201: NMK
+>
+>   > [NMK 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/NMK(1201).md]
+>   
+> + 백준 온라인저지 1103: 게임
+>
+>   > [게임 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B2%8C%EC%9E%84(1103).md]
 >
 > 
 
