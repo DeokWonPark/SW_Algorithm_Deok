@@ -260,10 +260,14 @@
 > + 백준 온라인저지 1201: NMK
 >
 >   > [NMK 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/NMK(1201).md]
->   
+>
 > + 백준 온라인저지 1103: 게임
 >
 >   > [게임 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B2%8C%EC%9E%84(1103).md]
+>   
+> + 백준 온라인저지 1194: 달이 차오른다 가자
+>
+>   > [달이 차오른다 가자 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%8B%AC%EC%9D%B4%20%EC%B0%A8%EC%98%A4%EB%A5%B8%EB%8B%A4%20%EA%B0%80%EC%9E%90(1194).md]
 >
 > 
 
