@@ -276,10 +276,18 @@
 > + 백준 온라인저지 2580: 스도쿠
 >
 >   > [스도쿠 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%8A%A4%EB%8F%84%EC%BF%A0(2580).md]
->   
+>
 > + 백준 온라인저지 4179: 불!
 >
 >   > [불! 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EB%B6%88(4179).md]
+>
+> + 백준 온라인저지 4574: 스도미노쿠
+>
+>   > [스도미노쿠 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%8A%A4%EB%8F%84%EB%AF%B8%EB%85%B8%EC%BF%A0(4574).md]
+>   
+> + 백준 온라인저지 11729: 하노이탑 이동순서
+>
+>   > [하노이탑 이동순서 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%ED%95%98%EB%85%B8%EC%9D%B4%ED%83%91%20%EC%9D%B4%EB%8F%99%20%EC%88%9C%EC%84%9C(11729).md]
 >
 > 
 
