@@ -296,7 +296,7 @@
 > + 백준 온라인저지 1891: 사분면
 >
 >   > [사분면 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%82%AC%EB%B6%84%EB%A9%B4(1891).md]
->   
+>
 > + 백준 온라인저지 1891: 사분면
 >
 >   > [사분면 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%82%AC%EB%B6%84%EB%A9%B4(1891).md]
@@ -304,6 +304,10 @@
 > + 백준 온라인저지 2151: 거울설치
 >
 >   > [거울설치 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EA%B1%B0%EC%9A%B8%EC%84%A4%EC%B9%98(2151).md]
+>   
+> + 백준 온라인저지 1933: 스카이라인
+>
+>   > [스카이라인 풀이][https://github.com/DeokWonPark/SW_Algorithm_Deok/blob/master/Boj_code_md/%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%9D%BC%EC%9D%B8(1933).md]
 >
 > 
 
